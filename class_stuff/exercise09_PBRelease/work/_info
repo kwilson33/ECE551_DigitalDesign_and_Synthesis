@@ -1,0 +1,104 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/AppV5/Quartus_16.v2
+vPB_release
+Z0 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+Z1 !s110 1539182801
+!i10b 1
+!s100 ^`z3oj`hFMEFe56zlM^lg0
+IT]3SN:eTjhAiH;4Sd`^MT3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s105 PB_release_sv_unit
+S1
+Z3 dI:/ece551/exercise09_PBRelease
+w1539013421
+8I:/ece551/exercise09_PBRelease/PB_release.sv
+FI:/ece551/exercise09_PBRelease/PB_release.sv
+L0 4
+Z4 OV;L;10.4d;61
+r1
+!s85 0
+31
+!s108 1539182800.000000
+!s107 I:/ece551/exercise09_PBRelease/PB_release.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|I:/ece551/exercise09_PBRelease/PB_release.sv|
+!i113 1
+Z5 o-work work -sv
+n@p@b_release
+vPWM11_test
+R0
+R1
+!i10b 1
+!s100 1k<:DeG4VEG56ZeodPLgS3
+ISD]CB`1KnRlzTSobK13LR2
+R2
+!s105 PWM11_test_sv_unit
+S1
+R3
+w1539012457
+8I:/ece551/exercise09_PBRelease/PWM11_test.sv
+FI:/ece551/exercise09_PBRelease/PWM11_test.sv
+L0 1
+R4
+r1
+!s85 0
+31
+Z6 !s108 1539182801.000000
+!s107 I:/ece551/exercise09_PBRelease/PWM11_test.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|I:/ece551/exercise09_PBRelease/PWM11_test.sv|
+!i113 1
+R5
+n@p@w@m11_test
+vrst_synch
+R0
+Z7 !s110 1539182802
+!i10b 1
+!s100 @HOnY`GATNd>9E@XQIc<f0
+Ie58OMi4<PaOI?Z=NHX:`?1
+R2
+!s105 rst_synch_sv_unit
+S1
+R3
+w1539014785
+8I:/ece551/exercise09_PBRelease/rst_synch.sv
+FI:/ece551/exercise09_PBRelease/rst_synch.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R6
+!s107 I:/ece551/exercise09_PBRelease/rst_synch.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|I:/ece551/exercise09_PBRelease/rst_synch.sv|
+!i113 1
+R5
+vup_dwn_cnt4
+R0
+R7
+!i10b 1
+!s100 d6H`KANI`iEDzK0m[N;z:2
+IaHb7F0JJYmFlzGb3U]OUO0
+R2
+!s105 up_dwn_cnt4_sv_unit
+S1
+R3
+w1539034257
+8I:/ece551/exercise09_PBRelease/up_dwn_cnt4.sv
+FI:/ece551/exercise09_PBRelease/up_dwn_cnt4.sv
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1539182802.000000
+!s107 I:/ece551/exercise09_PBRelease/up_dwn_cnt4.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|I:/ece551/exercise09_PBRelease/up_dwn_cnt4.sv|
+!i113 1
+R5

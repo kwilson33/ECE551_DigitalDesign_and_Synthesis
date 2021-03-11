@@ -1,0 +1,6 @@
+
+State Machine - |Auth_blk_DE0|Auth_blk:iDUT|state
+Name state.OFF state.PWR2 state.PWR1 
+state.OFF 0 0 0 
+state.PWR1 1 0 1 
+state.PWR2 1 1 0 

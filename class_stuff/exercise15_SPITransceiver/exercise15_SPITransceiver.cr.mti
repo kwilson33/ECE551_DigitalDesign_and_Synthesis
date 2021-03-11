@@ -1,0 +1,29 @@
+Z:/ece551/exercise15_SPITransceiver/SPI_mstr16_tb.sv {1 {vlog -work work -sv -stats=none {Z:\ece551\exercise15_SPITransceiver\SPI_mstr16_tb.sv}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module SPI_mstr16_tb
+
+Top level modules:
+	SPI_mstr16_tb
+
+} {} {}} Z:/ece551/exercise15_SPITransceiver/SPI_ADC128S.sv {1 {vlog -work work -sv -stats=none Z:/ece551/exercise15_SPITransceiver/SPI_ADC128S.sv
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module SPI_ADC128S
+
+Top level modules:
+	SPI_ADC128S
+
+} {} {}} Z:/ece551/exercise15_SPITransceiver/ADC128S.sv {1 {vlog -work work -sv -stats=none Z:/ece551/exercise15_SPITransceiver/ADC128S.sv
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module ADC128S
+
+Top level modules:
+	ADC128S
+
+} {} {}} Z:/ece551/exercise15_SPITransceiver/SPI_mstr16.sv {1 {vlog -work work -sv -stats=none {Z:\ece551\exercise15_SPITransceiver\SPI_mstr16.sv}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module SPI_mstr16
+
+Top level modules:
+	SPI_mstr16
+
+} {} {}}

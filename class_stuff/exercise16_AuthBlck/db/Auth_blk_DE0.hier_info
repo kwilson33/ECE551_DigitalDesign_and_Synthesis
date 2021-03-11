@@ -1,0 +1,138 @@
+|Auth_blk_DE0
+clk => clk.IN4
+RST_n => RST_n.IN1
+PB => PB.IN1
+auth => LED[7].DATAIN
+auth => tx_data[4].IN1
+auth => tx_data[2].IN1
+rider_off => rider_off.IN1
+LED[0] << Auth_blk:iDUT.pwr_up
+LED[1] << <GND>
+LED[2] << <GND>
+LED[3] << <GND>
+LED[4] << <GND>
+LED[5] << <GND>
+LED[6] << rider_off.DB_MAX_OUTPUT_PORT_TYPE
+LED[7] << auth.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Auth_blk_DE0|Auth_blk:iDUT
+clk => clk.IN1
+rst_n => rst_n.IN1
+rider_off => nxt_state.DATAB
+rider_off => nxt_state.DATAA
+rider_off => nxt_state.DATAB
+rider_off => nxt_state.DATAA
+rider_off => clr_rx_rdy.DATAB
+pwr_up <= pwr_up.DB_MAX_OUTPUT_PORT_TYPE
+RX => RX.IN1
+
+
+|Auth_blk_DE0|Auth_blk:iDUT|UART_rcv:receiver
+RX => rx_shft_reg[8].DATAIN
+RX => nxt_state.DATAB
+RX => start.DATAB
+clr_rdy => always5.IN1
+clk => rdy~reg0.CLK
+clk => baud_cnt[0].CLK
+clk => baud_cnt[1].CLK
+clk => baud_cnt[2].CLK
+clk => baud_cnt[3].CLK
+clk => baud_cnt[4].CLK
+clk => baud_cnt[5].CLK
+clk => baud_cnt[6].CLK
+clk => baud_cnt[7].CLK
+clk => baud_cnt[8].CLK
+clk => baud_cnt[9].CLK
+clk => baud_cnt[10].CLK
+clk => baud_cnt[11].CLK
+clk => bit_cnt[0].CLK
+clk => bit_cnt[1].CLK
+clk => bit_cnt[2].CLK
+clk => bit_cnt[3].CLK
+clk => state.CLK
+rst_n => rdy~reg0.ACLR
+rst_n => state.ACLR
+rdy <= rdy~reg0.DB_MAX_OUTPUT_PORT_TYPE
+rx_data[0] <= rx_shft_reg[0].DB_MAX_OUTPUT_PORT_TYPE
+rx_data[1] <= rx_shft_reg[1].DB_MAX_OUTPUT_PORT_TYPE
+rx_data[2] <= rx_shft_reg[2].DB_MAX_OUTPUT_PORT_TYPE
+rx_data[3] <= rx_shft_reg[3].DB_MAX_OUTPUT_PORT_TYPE
+rx_data[4] <= rx_shft_reg[4].DB_MAX_OUTPUT_PORT_TYPE
+rx_data[5] <= rx_shft_reg[5].DB_MAX_OUTPUT_PORT_TYPE
+rx_data[6] <= rx_shft_reg[6].DB_MAX_OUTPUT_PORT_TYPE
+rx_data[7] <= rx_shft_reg[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Auth_blk_DE0|PB_release:iPB
+released <= released.DB_MAX_OUTPUT_PORT_TYPE
+clk => pre3.CLK
+clk => pre2.CLK
+clk => pre1.CLK
+PB => pre1.DATAIN
+rst_n => pre3.PRESET
+rst_n => pre2.PRESET
+rst_n => pre1.PRESET
+
+
+|Auth_blk_DE0|rst_synch:iRST
+RST_n => rst_n~reg0.ACLR
+RST_n => reg1.ACLR
+clk => rst_n~reg0.CLK
+clk => reg1.CLK
+rst_n <= rst_n~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Auth_blk_DE0|UART_tx:iTX
+TX <= tx_shft_reg[0].DB_MAX_OUTPUT_PORT_TYPE
+tx_done <= tx_done~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => tx_shft_reg[0].CLK
+clk => tx_shft_reg[1].CLK
+clk => tx_shft_reg[2].CLK
+clk => tx_shft_reg[3].CLK
+clk => tx_shft_reg[4].CLK
+clk => tx_shft_reg[5].CLK
+clk => tx_shft_reg[6].CLK
+clk => tx_shft_reg[7].CLK
+clk => tx_shft_reg[8].CLK
+clk => baud_cnt[0].CLK
+clk => baud_cnt[1].CLK
+clk => baud_cnt[2].CLK
+clk => baud_cnt[3].CLK
+clk => baud_cnt[4].CLK
+clk => baud_cnt[5].CLK
+clk => baud_cnt[6].CLK
+clk => baud_cnt[7].CLK
+clk => baud_cnt[8].CLK
+clk => baud_cnt[9].CLK
+clk => baud_cnt[10].CLK
+clk => baud_cnt[11].CLK
+clk => bit_cnt[0].CLK
+clk => bit_cnt[1].CLK
+clk => bit_cnt[2].CLK
+clk => bit_cnt[3].CLK
+clk => tx_done~reg0.CLK
+clk => state.CLK
+rst_n => tx_shft_reg[0].PRESET
+rst_n => tx_shft_reg[1].PRESET
+rst_n => tx_shft_reg[2].PRESET
+rst_n => tx_shft_reg[3].PRESET
+rst_n => tx_shft_reg[4].PRESET
+rst_n => tx_shft_reg[5].PRESET
+rst_n => tx_shft_reg[6].PRESET
+rst_n => tx_shft_reg[7].PRESET
+rst_n => tx_shft_reg[8].PRESET
+rst_n => tx_done~reg0.ACLR
+rst_n => state.ACLR
+trmt => nxt_state.DATAB
+trmt => load.DATAB
+tx_data[0] => Selector23.IN2
+tx_data[1] => Selector22.IN2
+tx_data[2] => Selector21.IN2
+tx_data[3] => Selector20.IN2
+tx_data[4] => Selector19.IN2
+tx_data[5] => Selector18.IN2
+tx_data[6] => Selector17.IN2
+tx_data[7] => Selector16.IN3
+
+

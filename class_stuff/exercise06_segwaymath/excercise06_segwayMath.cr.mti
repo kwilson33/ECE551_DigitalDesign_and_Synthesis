@@ -1,0 +1,17 @@
+Z:/ece551/exercise06_segwaymath/duty.v {1 {vlog -work work -stats=none Z:/ece551/exercise06_segwaymath/duty.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module duty
+
+Top level modules:
+	duty
+
+} {} {}} Z:/ece551/exercise06_segwaymath/duty_tb.v {2 {vlog -work work -stats=none Z:/ece551/exercise06_segwaymath/duty_tb.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module duty_tb
+** Warning: Z:/ece551/exercise06_segwaymath/duty_tb.v(28): (vlog-2643) Unterminated string literal continues onto next line.
+
+
+Top level modules:
+	duty_tb
+
+} {} {}}

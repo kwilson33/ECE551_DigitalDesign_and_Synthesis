@@ -1,0 +1,50 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/AppV5/Quartus_16.v2
+vadd3bit
+!s110 1537373108
+!i10b 1
+!s100 zcVi3lDmjITcFHP9l2U@S3
+IOf^;E@_cZVL4Uego46<gC0
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+Z1 dI:/ece551/add3bit
+w1537373090
+8I:/ece551/add3bit/add3bit.v
+FI:/ece551/add3bit/add3bit.v
+L0 1
+Z2 OV;L;10.4d;61
+r1
+!s85 0
+31
+!s108 1537373108.000000
+!s107 I:/ece551/add3bit/add3bit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|I:/ece551/add3bit/add3bit.v|
+!i113 1
+Z3 o-work work
+vadd3bit_tb
+!s110 1537373157
+!i10b 1
+!s100 [FUl5diW`A:5]@Fa<[nX^3
+IbzD:_Ml>@odAaoz7ZPMbg3
+R0
+R1
+w1537373144
+8I:/ece551/add3bit/add3bit_tb.v
+FI:/ece551/add3bit/add3bit_tb.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1537373157.000000
+!s107 I:/ece551/add3bit/add3bit_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|I:/ece551/add3bit/add3bit_tb.v|
+!i113 1
+R3

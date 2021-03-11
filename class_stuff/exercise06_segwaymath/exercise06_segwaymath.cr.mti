@@ -1,0 +1,8 @@
+I:/ece551/exercise06_segwaymath/duty.v {1 {vlog -work work -stats=none {I:\ece551\exercise06_segwaymath\duty.v}
+Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+-- Compiling module duty
+
+Top level modules:
+	duty
+
+} {} {}}

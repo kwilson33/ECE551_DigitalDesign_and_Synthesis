@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/AppV5/Quartus_16.v2
+vduty
+!s110 1538447130
+!i10b 1
+!s100 I?66F]F0ihK2]^FEKSJ5h1
+IWHA1QbKDC2cK@lFdV28WK1
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+Z1 dZ:/ece551/exercise06_segwaymath
+w1538447015
+8Z:/ece551/exercise06_segwaymath/duty.v
+FZ:/ece551/exercise06_segwaymath/duty.v
+L0 1
+Z2 OP;L;10.4a;61
+r1
+!s85 0
+31
+!s108 1538447129.000000
+!s107 Z:/ece551/exercise06_segwaymath/duty.v|
+!s90 -reportprogress|300|-work|work|-stats=none|Z:/ece551/exercise06_segwaymath/duty.v|
+!s101 -O0
+!i113 1
+Z3 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+vduty_tb
+!s110 1538447778
+!i10b 1
+!s100 I?LPCHa8^mX4KIWaLHoSF0
+ISfhCNYIlk>icBXSR_n?DX0
+R0
+R1
+w1538447342
+8Z:/ece551/exercise06_segwaymath/duty_tb.v
+FZ:/ece551/exercise06_segwaymath/duty_tb.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1538447778.000000
+!s107 Z:/ece551/exercise06_segwaymath/duty_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|Z:/ece551/exercise06_segwaymath/duty_tb.v|
+!s101 -O0
+!i113 1
+R3

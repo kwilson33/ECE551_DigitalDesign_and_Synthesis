@@ -1,0 +1,7 @@
+module adder(Sum,co,A,B,cin);
+
+	input [3:0] A,B, Sum; // operands and sum
+	input cin, co; 	// carry in and carry out
+	
+	assign {co, Sum} = A + B + cin;
+endmodule

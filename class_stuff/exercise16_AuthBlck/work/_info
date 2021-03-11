@@ -1,0 +1,186 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/AppV5/Quartus_16.v2
+T_opt
+!s110 1541606352
+VY9>0lf4`PP<f6V7aR[QV[2
+04 11 4 work Auth_blk_tb fast 0
+=1-a0d3c10fdb9f-5be30bce-29d-e38
+o-quiet -auto_acc_if_foreign -work work
+n@_opt
+OE;O;10.3c;59
+R0
+vAuth_blk
+Z1 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+!s110 1541609107
+!i10b 1
+!s100 mYKGnWEc4gbYl7:::_Y=M1
+Io3VlZ5>69OiDjj6JI;G3T0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s105 Auth_blk_sv_unit
+S1
+Z3 dI:/ece551/exercise16_AuthBlck
+w1541609099
+8I:/ece551/exercise16_AuthBlck/Auth_blk.sv
+FI:/ece551/exercise16_AuthBlck/Auth_blk.sv
+L0 2
+Z4 OV;L;10.4d;61
+r1
+!s85 0
+31
+!s108 1541609106.000000
+!s107 I:/ece551/exercise16_AuthBlck/Auth_blk.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|I:/ece551/exercise16_AuthBlck/Auth_blk.sv|
+!i113 1
+Z5 o-work work -sv
+n@auth_blk
+vAuth_blk_DE0
+R1
+!s110 1541607227
+!i10b 1
+!s100 OfLVBO9Gmgo4m?z3jVW<A1
+I0BALc41@T1b^M]=XQ9niU1
+R2
+!s105 Auth_blk_DE0_sv_unit
+S1
+R3
+w1541607040
+8I:/ece551/exercise16_AuthBlck/Auth_blk_DE0.sv
+FI:/ece551/exercise16_AuthBlck/Auth_blk_DE0.sv
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1541607227.000000
+!s107 I:/ece551/exercise16_AuthBlck/Auth_blk_DE0.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|I:/ece551/exercise16_AuthBlck/Auth_blk_DE0.sv|
+!i113 1
+R5
+n@auth_blk_@d@e0
+vAuth_blk_tb
+R1
+!s110 1541607828
+!i10b 1
+!s100 :lMZTC=8INe:3^lfg@@f42
+IAg@>S66X]?@9SXdaem:0J1
+R2
+!s105 Auth_blk_tb_sv_unit
+S1
+R3
+w1541607824
+8I:/ece551/exercise16_AuthBlck/Auth_blk_tb.sv
+FI:/ece551/exercise16_AuthBlck/Auth_blk_tb.sv
+L0 2
+R4
+r1
+!s85 0
+31
+!s108 1541607828.000000
+!s107 I:/ece551/exercise16_AuthBlck/Auth_blk_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|I:/ece551/exercise16_AuthBlck/Auth_blk_tb.sv|
+!i113 1
+R5
+n@auth_blk_tb
+vPB_release
+R1
+Z6 !s110 1541608227
+!i10b 1
+!s100 ^`z3oj`hFMEFe56zlM^lg0
+I`L8d1cFSfaGjzHkNgbE`m1
+R2
+!s105 PB_release_sv_unit
+S1
+R3
+w1539009821
+8I:/ece551/exercise16_AuthBlck/PB_release.sv
+FI:/ece551/exercise16_AuthBlck/PB_release.sv
+L0 4
+R4
+r1
+!s85 0
+31
+Z7 !s108 1541608227.000000
+!s107 I:/ece551/exercise16_AuthBlck/PB_release.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|I:/ece551/exercise16_AuthBlck/PB_release.sv|
+!i113 1
+R5
+n@p@b_release
+vrst_synch
+R1
+R6
+!i10b 1
+!s100 @HOnY`GATNd>9E@XQIc<f0
+I_;IfOFmJI06m;`NTCUU1E2
+R2
+!s105 rst_synch_sv_unit
+S1
+R3
+w1539011185
+8I:/ece551/exercise16_AuthBlck/rst_synch.sv
+FI:/ece551/exercise16_AuthBlck/rst_synch.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R7
+!s107 I:/ece551/exercise16_AuthBlck/rst_synch.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|I:/ece551/exercise16_AuthBlck/rst_synch.sv|
+!i113 1
+R5
+vUART_rcv
+R1
+!s110 1541606887
+!i10b 1
+!s100 ;ia^:R[kDlJ?aZ8lc0DLc1
+I^eE49=afhVM28e@VK`ZZY3
+R2
+!s105 UART_rcv_sv_unit
+S1
+R3
+w1540219653
+8I:/ece551/exercise16_AuthBlck/UART_rcv.sv
+FI:/ece551/exercise16_AuthBlck/UART_rcv.sv
+L0 2
+R4
+r1
+!s85 0
+31
+!s108 1541606887.000000
+!s107 I:/ece551/exercise16_AuthBlck/UART_rcv.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|I:/ece551/exercise16_AuthBlck/UART_rcv.sv|
+!i113 1
+R5
+n@u@a@r@t_rcv
+vUART_tx
+R1
+!s110 1541608226
+!i10b 1
+!s100 @YO_Ud5BkM=70XlenfKKX1
+II_]1h0PcXmc0M>SNeM<dA3
+R2
+!s105 UART_tx_sv_unit
+S1
+R3
+w1541608128
+8I:/ece551/exercise16_AuthBlck/UART_tx.sv
+FI:/ece551/exercise16_AuthBlck/UART_tx.sv
+L0 2
+R4
+r1
+!s85 0
+31
+!s108 1541608226.000000
+!s107 I:/ece551/exercise16_AuthBlck/UART_tx.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|I:/ece551/exercise16_AuthBlck/UART_tx.sv|
+!i113 1
+R5
+n@u@a@r@t_tx

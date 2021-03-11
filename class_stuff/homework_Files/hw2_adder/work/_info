@@ -1,0 +1,50 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dI:/ece551/exercise07_inferringFFs
+vadder
+!s110 1538448999
+!i10b 1
+!s100 haLT6L_h;AKB@YkZ=7M1;1
+I0o;XOOiihjEgeTVBR9><C1
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+Z1 dI:/ece551/hw2_adder
+w1538445600
+8I:/ece551/hw2_adder/adder.v
+FI:/ece551/hw2_adder/adder.v
+L0 1
+Z2 OV;L;10.4d;61
+r1
+!s85 0
+31
+!s108 1538448999.000000
+!s107 I:/ece551/hw2_adder/adder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|I:/ece551/hw2_adder/adder.v|
+!i113 1
+Z3 o-work work
+vadder_tb
+!s110 1538451233
+!i10b 1
+!s100 g6XjN0h3C^k:28E0aoAY^3
+I@<2^Dkbdkk6V<AzAmanLe3
+R0
+R1
+w1538451221
+8I:/ece551/hw2_adder/adder_tb.v
+FI:/ece551/hw2_adder/adder_tb.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1538451233.000000
+!s107 I:/ece551/hw2_adder/adder_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|I:/ece551/hw2_adder/adder_tb.v|
+!i113 1
+R3

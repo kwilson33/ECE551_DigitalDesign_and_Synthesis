@@ -1,0 +1,109 @@
+/////////////////////////////////////////////////////////////
+// Created by: Synopsys DC Expert(TM) in wire load mode
+// Version   : N-2017.09-SP5
+// Date      : Mon Oct 15 17:16:56 2018
+/////////////////////////////////////////////////////////////
+
+
+module commMod ( clk, rst_n, trmt, txdata, pckt_rdy, clr_pckt_rdy, rxdata, Bp, 
+        Am );
+  input [15:0] txdata;
+  output [15:0] rxdata;
+  input clk, rst_n, trmt, clr_pckt_rdy;
+  output pckt_rdy;
+  inout Bp,  Am;
+  wire   tx, strt_tx, tx_done, mid_bit, trnsmttng, strt_rcv, msg_in, N44, n1,
+         n2, n3, n4, n5, n8, n9, n14, n15, n16, n20, n38, n40, n58, n59, n60,
+         n61, n62;
+  wire   [7:0] txdata8;
+  wire   [7:0] signature;
+  wire   [7:0] txhigh;
+  wire   [2:0] state;
+  wire   [2:0] nxt_state;
+  assign pckt_rdy = 1'b0;
+
+  RCOAI21D2BWP12T U12 ( .A1(tx_done), .A2(n4), .B(n5), .ZN(n3) );
+  AO21D1BWP12T U69 ( .A1(strt_rcv), .A2(n20), .B(trmt), .Z(N44) );
+  uart iUART ( .clk(clk), .rst_n(rst_n), .rx(n40), .tx(tx), .strt_tx(strt_tx), 
+        .tx_data(txdata8), .tx_done(tx_done), .mid_bit(mid_bit), .trnsmttng(
+        trnsmttng), .strt_rcv(strt_rcv) );
+  CRC iCRC ( .clk(clk), .strt(N44), .shift(mid_bit), .msg_in(msg_in), 
+        .signature(signature) );
+  BUFTD1BWP12T Bp_tri ( .I(tx), .OE(trnsmttng), .Z(Bp) );
+  EDFQD1BWP12T \txhigh_reg[0]  ( .D(txdata[8]), .E(trmt), .CP(clk), .Q(
+        txhigh[0]) );
+  DFCNQD1BWP12T \state_reg[0]  ( .D(nxt_state[0]), .CP(clk), .CDN(rst_n), .Q(
+        state[0]) );
+  DFCNQD1BWP12T \state_reg[1]  ( .D(nxt_state[1]), .CP(clk), .CDN(rst_n), .Q(
+        state[1]) );
+  BUFTD1BWP12T Am_tri ( .I(n59), .OE(trnsmttng), .Z(Am) );
+  EDFQD1BWP12T \txhigh_reg[7]  ( .D(txdata[15]), .E(trmt), .CP(clk), .Q(
+        txhigh[7]) );
+  EDFQD1BWP12T \txhigh_reg[6]  ( .D(txdata[14]), .E(trmt), .CP(clk), .Q(
+        txhigh[6]) );
+  EDFQD1BWP12T \txhigh_reg[5]  ( .D(txdata[13]), .E(trmt), .CP(clk), .Q(
+        txhigh[5]) );
+  EDFQD1BWP12T \txhigh_reg[4]  ( .D(txdata[12]), .E(trmt), .CP(clk), .Q(
+        txhigh[4]) );
+  EDFQD1BWP12T \txhigh_reg[3]  ( .D(txdata[11]), .E(trmt), .CP(clk), .Q(
+        txhigh[3]) );
+  EDFQD1BWP12T \txhigh_reg[2]  ( .D(txdata[10]), .E(trmt), .CP(clk), .Q(
+        txhigh[2]) );
+  EDFQD1BWP12T \txhigh_reg[1]  ( .D(txdata[9]), .E(trmt), .CP(clk), .Q(
+        txhigh[1]) );
+  DFQD1BWP12T \rxdata_reg[15]  ( .D(rxdata[15]), .CP(clk), .Q(rxdata[15]) );
+  DFQD1BWP12T \rxdata_reg[14]  ( .D(rxdata[14]), .CP(clk), .Q(rxdata[14]) );
+  DFQD1BWP12T \rxdata_reg[13]  ( .D(rxdata[13]), .CP(clk), .Q(rxdata[13]) );
+  DFQD1BWP12T \rxdata_reg[12]  ( .D(rxdata[12]), .CP(clk), .Q(rxdata[12]) );
+  DFQD1BWP12T \rxdata_reg[11]  ( .D(rxdata[11]), .CP(clk), .Q(rxdata[11]) );
+  DFQD1BWP12T \rxdata_reg[10]  ( .D(rxdata[10]), .CP(clk), .Q(rxdata[10]) );
+  DFQD1BWP12T \rxdata_reg[9]  ( .D(rxdata[9]), .CP(clk), .Q(rxdata[9]) );
+  DFQD1BWP12T \rxdata_reg[8]  ( .D(rxdata[8]), .CP(clk), .Q(rxdata[8]) );
+  DFQD1BWP12T \rxdata_reg[7]  ( .D(rxdata[7]), .CP(clk), .Q(rxdata[7]) );
+  DFQD1BWP12T \rxdata_reg[6]  ( .D(rxdata[6]), .CP(clk), .Q(rxdata[6]) );
+  DFQD1BWP12T \rxdata_reg[5]  ( .D(rxdata[5]), .CP(clk), .Q(rxdata[5]) );
+  DFQD1BWP12T \rxdata_reg[4]  ( .D(rxdata[4]), .CP(clk), .Q(rxdata[4]) );
+  DFQD1BWP12T \rxdata_reg[3]  ( .D(rxdata[3]), .CP(clk), .Q(rxdata[3]) );
+  DFQD1BWP12T \rxdata_reg[2]  ( .D(rxdata[2]), .CP(clk), .Q(rxdata[2]) );
+  DFQD1BWP12T \rxdata_reg[0]  ( .D(rxdata[0]), .CP(clk), .Q(rxdata[0]) );
+  DFQD1BWP12T \rxdata_reg[1]  ( .D(rxdata[1]), .CP(clk), .Q(rxdata[1]) );
+  ND3D1BWP12T U74 ( .A1(n8), .A2(n16), .A3(1'b1), .ZN(nxt_state[0]) );
+  NR2D1BWP12T U75 ( .A1(n9), .A2(1'b0), .ZN(n20) );
+  TPNR3D1BWP12T U76 ( .A1(state[1]), .A2(1'b0), .A3(n62), .ZN(n15) );
+  ND2D1BWP12T U77 ( .A1(tx_done), .A2(n15), .ZN(n5) );
+  MAOI22D0BWP12T U78 ( .A1(n20), .A2(trmt), .B1(n4), .B2(n61), .ZN(n8) );
+  NR2D1BWP12T U79 ( .A1(Bp), .A2(trnsmttng), .ZN(n38) );
+  TPNR2D2BWP12T U80 ( .A1(n3), .A2(n58), .ZN(n2) );
+  ND2D1BWP12T U81 ( .A1(n8), .A2(n5), .ZN(strt_tx) );
+  ND2D1BWP12T U82 ( .A1(state[1]), .A2(n62), .ZN(n4) );
+  NR2D1BWP12T U83 ( .A1(n59), .A2(n38), .ZN(msg_in) );
+  ND3D1BWP12T U84 ( .A1(n14), .A2(n4), .A3(n5), .ZN(nxt_state[1]) );
+  INVD1BWP12T U85 ( .I(n38), .ZN(n40) );
+  AO222D1BWP12T U86 ( .A1(signature[6]), .A2(n58), .B1(txdata[1]), .B2(n2), 
+        .C1(txhigh[1]), .C2(n3), .Z(txdata8[1]) );
+  AO222D1BWP12T U87 ( .A1(signature[5]), .A2(n58), .B1(txdata[2]), .B2(n2), 
+        .C1(txhigh[2]), .C2(n3), .Z(txdata8[2]) );
+  AO222D1BWP12T U88 ( .A1(signature[4]), .A2(n58), .B1(txdata[3]), .B2(n2), 
+        .C1(txhigh[3]), .C2(n3), .Z(txdata8[3]) );
+  AO222D1BWP12T U89 ( .A1(signature[3]), .A2(n58), .B1(txdata[4]), .B2(n2), 
+        .C1(txhigh[4]), .C2(n3), .Z(txdata8[4]) );
+  AO222D1BWP12T U90 ( .A1(signature[2]), .A2(n58), .B1(txdata[5]), .B2(n2), 
+        .C1(txhigh[5]), .C2(n3), .Z(txdata8[5]) );
+  AO222D1BWP12T U91 ( .A1(signature[1]), .A2(n58), .B1(txdata[6]), .B2(n2), 
+        .C1(txhigh[6]), .C2(n3), .Z(txdata8[6]) );
+  AO222D0BWP12T U92 ( .A1(signature[0]), .A2(n58), .B1(txdata[7]), .B2(n2), 
+        .C1(txhigh[7]), .C2(n3), .Z(txdata8[7]) );
+  ND3D1BWP12T U93 ( .A1(state[1]), .A2(n61), .A3(state[0]), .ZN(n14) );
+  INVD1BWP12T U94 ( .I(state[0]), .ZN(n62) );
+  OAI22D1BWP12T U95 ( .A1(n15), .A2(n60), .B1(n61), .B2(n60), .ZN(n16) );
+  INVD1BWP12T U96 ( .I(n14), .ZN(n60) );
+  IND2XD1BWP12T U97 ( .A1(state[1]), .B1(n62), .ZN(n9) );
+  INVD1BWP12T U98 ( .I(tx_done), .ZN(n61) );
+  AO222D0BWP12T U99 ( .A1(signature[7]), .A2(n58), .B1(txdata[0]), .B2(n2), 
+        .C1(txhigh[0]), .C2(n3), .Z(txdata8[0]) );
+  CKBD2BWP12T U100 ( .I(n1), .Z(n58) );
+  MOAI22D0BWP12T U101 ( .A1(n4), .A2(n61), .B1(state[1]), .B2(state[0]), .ZN(
+        n1) );
+  INVD1BWP12T U102 ( .I(tx), .ZN(n59) );
+endmodule
+

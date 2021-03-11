@@ -1,0 +1,15 @@
+Z:/ece551/hw3_steeringSM/steer_en_SM_tb.v {1 {vlog -work work -stats=none Z:/ece551/hw3_steeringSM/steer_en_SM_tb.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module steer_en_SM_tb
+
+Top level modules:
+	steer_en_SM_tb
+
+} {} {}} Z:/ece551/hw3_steeringSM/steer_en_SM.sv {1 {vlog -work work -sv -stats=none Z:/ece551/hw3_steeringSM/steer_en_SM.sv
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module steer_en_SM
+
+Top level modules:
+	steer_en_SM
+
+} {} {}}

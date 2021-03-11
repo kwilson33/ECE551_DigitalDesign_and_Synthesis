@@ -1,0 +1,235 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/userspace/k/kwilson33/ece551/modelsim/tutorial
+T_opt
+!s110 1536622940
+Vbol0XiZ03;7H[eaJg8eE82
+04 9 4 work t_receive fast 0
+=1-000ae431a4f1-5b97014a-28277-15a31c
+Z1 o-quiet -auto_acc_if_foreign -work work
+Z2 tCvgOpt 0
+n@_opt
+Z3 OL;O;10.6a;65
+T_opt1
+!s110 1536622762
+V0FOgz18B6TQJVgHm=_[IG0
+04 7 4 work Receive fast 0
+=1-000ae431a4f1-5b9700aa-84e83-15a196
+R1
+R2
+n@_opt1
+R3
+R0
+T_opt2
+!s110 1536622554
+V;i<VnMGzICd6Z^odk]QC33
+04 10 4 work t_transmit fast 0
+=1-000ae431a4f1-5b96ffda-7d973-159fff
+R1
+R2
+n@_opt2
+R3
+R0
+vBusInt
+Z4 !s110 1536622908
+!i10b 1
+!s100 mKk_<H>e`N`kZX>Y8DP>61
+IKMn>E_`ND^4kGVbZGK@O<3
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z6 w1536617510
+8/userspace/k/kwilson33/ece551/modelsim/tutorial/busint.v
+F/userspace/k/kwilson33/ece551/modelsim/tutorial/busint.v
+L0 9
+Z7 OL;L;10.6a;65
+r1
+!s85 0
+31
+Z8 !s108 1536622908.000000
+!s107 /userspace/k/kwilson33/ece551/modelsim/tutorial/busint.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/userspace/k/kwilson33/ece551/modelsim/tutorial/busint.v|
+!i113 0
+Z9 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+n@bus@int
+vmux
+R4
+!i10b 1
+!s100 3LhZ^Y2l`;V=5oaDjY`SR0
+I=Gni1C<9V0n@>7PKRJ3Kj0
+R5
+R0
+R6
+8/userspace/k/kwilson33/ece551/modelsim/tutorial/mux.v
+F/userspace/k/kwilson33/ece551/modelsim/tutorial/mux.v
+L0 1
+R7
+r1
+!s85 0
+31
+R8
+!s107 /userspace/k/kwilson33/ece551/modelsim/tutorial/mux.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/userspace/k/kwilson33/ece551/modelsim/tutorial/mux.v|
+!i113 0
+R9
+R2
+vReceive
+Z10 !s110 1536622909
+!i10b 1
+!s100 zf7=LmdW1n`WWN:z0F4b81
+IO8SN`QWBcD_cGldJnbM]l1
+R5
+R0
+R6
+8/userspace/k/kwilson33/ece551/modelsim/tutorial/receive.v
+F/userspace/k/kwilson33/ece551/modelsim/tutorial/receive.v
+L0 12
+R7
+r1
+!s85 0
+31
+R8
+!s107 /userspace/k/kwilson33/ece551/modelsim/tutorial/receive.v|
+!s90 -reportprogress|300|-work|work|-vopt|-cover|sbce3|-stats=none|/userspace/k/kwilson33/ece551/modelsim/tutorial/receive.v|
+!i113 0
+Z11 !s102 -cover sbce3
+Z12 o-work work -cover sbce3 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+n@receive
+vssp
+R10
+!i10b 1
+!s100 ^Jc=^Pe1WTMz1oA0fVK:j3
+IeUQWVC?ne7aK`YXhUZ2g93
+R5
+R0
+R6
+8/userspace/k/kwilson33/ece551/modelsim/tutorial/ssp.v
+F/userspace/k/kwilson33/ece551/modelsim/tutorial/ssp.v
+L0 8
+R7
+r1
+!s85 0
+31
+Z13 !s108 1536622909.000000
+!s107 /userspace/k/kwilson33/ece551/modelsim/tutorial/ssp.v|
+!s90 -reportprogress|300|-work|work|-vopt|-cover|sbcet3|-stats=none|/userspace/k/kwilson33/ece551/modelsim/tutorial/ssp.v|
+!i113 0
+Z14 !s102 -cover sbcet3
+Z15 o-work work -cover sbcet3 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vt_errors
+R10
+!i10b 1
+!s100 7USQzCb8?h=]7zn4H^Ge=2
+IaK[oh7CfX50L9R28InnSE2
+R5
+R0
+R6
+8/userspace/k/kwilson33/ece551/modelsim/tutorial/t_errors.v
+F/userspace/k/kwilson33/ece551/modelsim/tutorial/t_errors.v
+L0 2
+R7
+r1
+!s85 0
+31
+R13
+!s107 /userspace/k/kwilson33/ece551/modelsim/tutorial/t_errors.v|
+!s90 -reportprogress|300|-work|work|-vopt|-cover|sbce3|-stats=none|/userspace/k/kwilson33/ece551/modelsim/tutorial/t_errors.v|
+!i113 0
+R11
+R12
+R2
+vt_receive
+R10
+!i10b 1
+!s100 zXTmV:VTJaUc_[TCL2mmL2
+IGANWWF`CJaaJE=R4kVozb3
+R5
+R0
+R6
+8/userspace/k/kwilson33/ece551/modelsim/tutorial/t_receive.v
+F/userspace/k/kwilson33/ece551/modelsim/tutorial/t_receive.v
+L0 10
+R7
+r1
+!s85 0
+31
+R13
+!s107 /userspace/k/kwilson33/ece551/modelsim/tutorial/t_receive.v|
+!s90 -reportprogress|300|-work|work|-vopt|-cover|sbce3|-stats=none|/userspace/k/kwilson33/ece551/modelsim/tutorial/t_receive.v|
+!i113 0
+R11
+R12
+R2
+vt_ssp
+R10
+!i10b 1
+!s100 O8;^a^OMmhi4WZD_eZb312
+ISeI6C:GKE4[oVel[9_;7P3
+R5
+R0
+R6
+8/userspace/k/kwilson33/ece551/modelsim/tutorial/t_ssp.v
+F/userspace/k/kwilson33/ece551/modelsim/tutorial/t_ssp.v
+L0 8
+R7
+r1
+!s85 0
+31
+R13
+!s107 /userspace/k/kwilson33/ece551/modelsim/tutorial/t_ssp.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/userspace/k/kwilson33/ece551/modelsim/tutorial/t_ssp.v|
+!i113 0
+R9
+R2
+vt_transmit
+R10
+!i10b 1
+!s100 nid0YFNnXoZQ_f][^^4;O2
+Il1F5l4j2`IDWV]XZTS]U32
+R5
+R0
+R6
+8/userspace/k/kwilson33/ece551/modelsim/tutorial/t_transmit.v
+F/userspace/k/kwilson33/ece551/modelsim/tutorial/t_transmit.v
+L0 13
+R7
+r1
+!s85 0
+31
+R13
+!s107 /userspace/k/kwilson33/ece551/modelsim/tutorial/t_transmit.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/userspace/k/kwilson33/ece551/modelsim/tutorial/t_transmit.v|
+!i113 0
+R9
+R2
+vtransmit
+R10
+!i10b 1
+!s100 K_2_=X68N69U?W1`gcbeB3
+IIG>jbM_<KmBWZWA^5lJ<X2
+R5
+R0
+R6
+8/userspace/k/kwilson33/ece551/modelsim/tutorial/transmit.v
+F/userspace/k/kwilson33/ece551/modelsim/tutorial/transmit.v
+L0 9
+R7
+r1
+!s85 0
+31
+R13
+!s107 /userspace/k/kwilson33/ece551/modelsim/tutorial/transmit.v|
+!s90 -reportprogress|300|-work|work|-vopt|-cover|sbcet3|-stats=none|/userspace/k/kwilson33/ece551/modelsim/tutorial/transmit.v|
+!i113 0
+R14
+R15
+R2

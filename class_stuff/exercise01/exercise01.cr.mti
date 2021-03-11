@@ -1,0 +1,8 @@
+I:/ece551/exercise01/counter.sv {1 {vlog -work work -sv -stats=none I:/ece551/exercise01/counter.sv
+Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+-- Compiling module counter
+
+Top level modules:
+	counter
+
+} {} {}}

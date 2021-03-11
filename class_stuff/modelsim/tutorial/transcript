@@ -1,0 +1,293 @@
+# //  Questa Sim-64
+# //  Version 10.6a linux_x86_64 Mar 16 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading project tutorial
+# Compile of busint.v was successful.
+# Compile of errors.v failed with 2 errors.
+# Compile of mux.v was successful.
+# Compile of receive.v was successful.
+# Compile of ssp.v was successful.
+# Compile of t_errors.v was successful.
+# Compile of t_receive.v was successful.
+# Compile of t_ssp.v was successful.
+# Compile of t_transmit.v was successful.
+# Compile of transmit.v was successful.
+# 10 compiles, 1 failed with 2 errors.
+# Compile of errors.v failed with 2 errors.
+# Compile of errors.v failed with 2 errors.
+# Compile of errors.v failed with 2 errors.
+# Compile of errors.v was successful.
+# Load canceled
+vsim t_receive.v
+# OpenFile t_receive.v
+vsim work.t_receive
+# vsim work.t_receive 
+# Start time: 17:21:28 on Sep 10,2018
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.t_receive(fast)
+quit -sim
+# End time: 17:23:25 on Sep 10,2018, Elapsed time: 0:01:57
+# Errors: 0, Warnings: 0
+vsim work.t_receive -novopt
+# vsim work.t_receive -novopt 
+# Start time: 17:23:40 on Sep 10,2018
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /userspace/k/kwilson33/ece551/modelsim/tutorial/work.t_receive
+# Loading work.t_receive
+# Refreshing /userspace/k/kwilson33/ece551/modelsim/tutorial/work.Receive
+# Loading work.Receive
+force -freeze sim:/t_receive/DUT/State 0000 0
+run
+run 100ns
+run -all
+# ** Note: $stop    : /userspace/k/kwilson33/ece551/modelsim/tutorial/t_receive.v(66)
+#    Time: 7905 ns  Iteration: 0  Instance: /t_receive
+# Break in Module t_receive at /userspace/k/kwilson33/ece551/modelsim/tutorial/t_receive.v line 66
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+add wave -position insertpoint  \
+sim:/t_receive/ExpectedDataOut \
+sim:/t_receive/DataOut \
+sim:/t_receive/Clk \
+sim:/t_receive/SerData
+add wave -position insertpoint sim:/t_receive/DUT/*
+run
+# Causality operation skipped due to absence of debug database file
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf /userspace/k/kwilson33/ece551/modelsim/tutorial/waveWindowSettings.do
+# ** Note: (vish-4074) File /userspace/k/kwilson33/ece551/modelsim/tutorial/vsim.wlf is still open, viewing file in live viewing mode.
+# 
+do /userspace/k/kwilson33/ece551/modelsim/tutorial/waveWindowSettings.do
+run -all
+# ** Note: $stop    : /userspace/k/kwilson33/ece551/modelsim/tutorial/t_receive.v(66)
+#    Time: 7905 ns  Iteration: 0  Instance: /t_receive
+# Break in Module t_receive at /userspace/k/kwilson33/ece551/modelsim/tutorial/t_receive.v line 66
+quit -sim
+# End time: 18:01:00 on Sep 10,2018, Elapsed time: 0:37:20
+# Errors: 0, Warnings: 1
+vsim -novopt work.t_ssp
+# vsim -novopt work.t_ssp 
+# Start time: 18:03:14 on Sep 10,2018
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /userspace/k/kwilson33/ece551/modelsim/tutorial/work.t_ssp
+# Loading work.t_ssp
+# Refreshing /userspace/k/kwilson33/ece551/modelsim/tutorial/work.ssp
+# Loading work.ssp
+# Refreshing /userspace/k/kwilson33/ece551/modelsim/tutorial/work.BusInt
+# Loading work.BusInt
+# Loading work.Receive
+# Refreshing /userspace/k/kwilson33/ece551/modelsim/tutorial/work.transmit
+# Loading work.transmit
+add wave -position insertpoint sim:/t_ssp/*
+add wave -position insertpoint sim:/t_ssp/*
+run -all
+# ** Note: $stop    : /userspace/k/kwilson33/ece551/modelsim/tutorial/t_ssp.v(105)
+#    Time: 1280505 ns  Iteration: 0  Instance: /t_ssp
+# Break in Module t_ssp at /userspace/k/kwilson33/ece551/modelsim/tutorial/t_ssp.v line 105
+add wave -position insertpoint sim:/t_ssp/*
+# Can't move the Now cursor.
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+run 10 us
+# Break in Module t_ssp at /userspace/k/kwilson33/ece551/modelsim/tutorial/t_ssp.v line 88
+run -continue
+# Break in Module t_ssp at /userspace/k/kwilson33/ece551/modelsim/tutorial/t_ssp.v line 88
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+run -continue
+# Break in Module t_ssp at /userspace/k/kwilson33/ece551/modelsim/tutorial/t_ssp.v line 88
+run -continue
+# Break in Module t_ssp at /userspace/k/kwilson33/ece551/modelsim/tutorial/t_ssp.v line 99
+run -continue
+# Break in Module t_ssp at /userspace/k/kwilson33/ece551/modelsim/tutorial/t_ssp.v line 99
+run -continue
+# Break in Module t_ssp at /userspace/k/kwilson33/ece551/modelsim/tutorial/t_ssp.v line 88
+run -continue
+run -continue
+run -continue
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+run -continue
+# Break in Module t_ssp at /userspace/k/kwilson33/ece551/modelsim/tutorial/t_ssp.v line 88
+run -continue
+# Break in Module t_ssp at /userspace/k/kwilson33/ece551/modelsim/tutorial/t_ssp.v line 99
+run -continue
+# Break in Module t_ssp at /userspace/k/kwilson33/ece551/modelsim/tutorial/t_ssp.v line 99
+run -continue
+# Break in Module t_ssp at /userspace/k/kwilson33/ece551/modelsim/tutorial/t_ssp.v line 88
+quit -sim
+# End time: 18:19:53 on Sep 10,2018, Elapsed time: 0:16:39
+# Errors: 1, Warnings: 0
+vsim -novopt work.t_errors
+# vsim -novopt work.t_errors 
+# Start time: 18:20:23 on Sep 10,2018
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /userspace/k/kwilson33/ece551/modelsim/tutorial/work.t_errors
+# Loading work.t_errors
+# Refreshing /userspace/k/kwilson33/ece551/modelsim/tutorial/work.mux
+# Loading work.mux
+# ** Warning: (vsim-3015) /userspace/k/kwilson33/ece551/modelsim/tutorial/t_errors.v(9): [PCDPC] - Port size (1) does not match connection size (2) for port 'sel'. The port definition is at: /userspace/k/kwilson33/ece551/modelsim/tutorial/errors.v(1).
+#    Time: 0 ns  Iteration: 0  Instance: /t_errors/DUT File: /userspace/k/kwilson33/ece551/modelsim/tutorial/errors.v
+# Compile of busint.v was successful.
+# Compile of errors.v was successful.
+# Compile of mux.v was successful.
+# Compile of receive.v was successful.
+# Compile of ssp.v was successful.
+# Compile of t_errors.v was successful.
+# Compile of t_receive.v was successful.
+# Compile of t_ssp.v was successful.
+# Compile of t_transmit.v was successful.
+# Compile of transmit.v was successful.
+# 10 compiles, 0 failed with no errors.
+# Load canceled
+vsim -novopt work.t_receive
+# End time: 18:30:20 on Sep 10,2018, Elapsed time: 0:09:57
+# Errors: 1, Warnings: 2
+# vsim -novopt work.t_receive 
+# Start time: 18:30:20 on Sep 10,2018
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /userspace/k/kwilson33/ece551/modelsim/tutorial/work.t_receive
+# Loading work.t_receive
+# Refreshing /userspace/k/kwilson33/ece551/modelsim/tutorial/work.Receive
+# Loading work.Receive
+quit -sim
+# End time: 18:31:25 on Sep 10,2018, Elapsed time: 0:01:05
+# Errors: 0, Warnings: 1
+vsim work.t_receive
+# vsim work.t_receive 
+# Start time: 18:31:29 on Sep 10,2018
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.t_receive(fast)
+quit -sim
+# End time: 18:31:36 on Sep 10,2018, Elapsed time: 0:00:07
+# Errors: 0, Warnings: 0
+vsim work.t_errors
+# vsim work.t_errors 
+# Start time: 18:31:55 on Sep 10,2018
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: /userspace/k/kwilson33/ece551/modelsim/tutorial/t_errors.v(9): (vopt-2912) Port 'i0' not found in module 'mux' (1st connection).
+# ** Error: /userspace/k/kwilson33/ece551/modelsim/tutorial/t_errors.v(9): (vopt-2912) Port 'i1' not found in module 'mux' (2nd connection).
+# ** Warning: /userspace/k/kwilson33/ece551/modelsim/tutorial/t_errors.v(9): (vopt-2241) Connection width does not match width of port 'sel'. The port definition is at: /userspace/k/kwilson33/ece551/modelsim/tutorial/mux.v(1).
+# ** Error: /userspace/k/kwilson33/ece551/modelsim/tutorial/t_errors.v(9): (vopt-2912) Port 'o' not found in module 'mux' (4th connection).
+# Optimization failed
+# Error loading design
+# End time: 18:31:55 on Sep 10,2018, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 1
+vsim work.t_ssp
+# vsim work.t_ssp 
+# Start time: 18:32:22 on Sep 10,2018
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.t_ssp(fast)
+quit -sim
+# End time: 18:32:46 on Sep 10,2018, Elapsed time: 0:00:24
+# Errors: 0, Warnings: 0
+# Compile of receive.v was successful.
+vsim work._opt work._opt1 work.BusInt work.mux work.Receive work.ssp work.t_errors work.t_receive work.t_ssp work.t_transmit work.transmit
+# vsim work._opt work._opt1 work.BusInt work.mux work.Receive work.ssp work.t_errors work.t_receive work.t_ssp work.t_transmit work.transmit 
+# Start time: 18:35:18 on Sep 10,2018
+# ** Warning: (vsim-3824) Optimized (_opt, _opt1) and unoptimized (BusInt, mux, Receive, ssp, t_errors, t_receive, t_ssp, t_transmit, transmit) top-level design units are
+# simulated together. Unoptimized design units will not be optimized. 
+# ** Warning: (vsim-1963) Explicit invocation on automatically named optimized design "_opt" will not cause it to be locked.
+# ** Warning: (vsim-1963) Explicit invocation on automatically named optimized design "_opt1" will not cause it to be locked.
+# Loading work.t_receive(fast)
+# Loading work.t_ssp(fast)
+# Refreshing /userspace/k/kwilson33/ece551/modelsim/tutorial/work.BusInt
+# Loading work.BusInt
+# Refreshing /userspace/k/kwilson33/ece551/modelsim/tutorial/work.mux
+# Loading work.mux
+# Refreshing /userspace/k/kwilson33/ece551/modelsim/tutorial/work.Receive
+# Loading work.Receive
+# Refreshing /userspace/k/kwilson33/ece551/modelsim/tutorial/work.ssp
+# Loading work.ssp
+# Refreshing /userspace/k/kwilson33/ece551/modelsim/tutorial/work.transmit
+# Loading work.transmit
+# Refreshing /userspace/k/kwilson33/ece551/modelsim/tutorial/work.t_errors
+# Loading work.t_errors
+# ** Error (suppressible): (vsim-3009) [TSCALE] - Module 't_errors' does not have a timeunit/timeprecision specification in effect, but other modules do.
+#    Time: 0 ns  Iteration: 0  Instance: /t_errors File: /userspace/k/kwilson33/ece551/modelsim/tutorial/t_errors.v
+# Loading work.t_receive
+# ** Error (suppressible): (vsim-3369) Top-level design unit 'work.t_receive' specified more than once. (_opt & t_receive)
+# Refreshing /userspace/k/kwilson33/ece551/modelsim/tutorial/work.t_ssp
+# Loading work.t_ssp
+# ** Error (suppressible): (vsim-3369) Top-level design unit 'work.t_ssp' specified more than once. (_opt1 & t_ssp)
+# Refreshing /userspace/k/kwilson33/ece551/modelsim/tutorial/work.t_transmit
+# Loading work.t_transmit
+# Error loading design
+# End time: 18:35:19 on Sep 10,2018, Elapsed time: 0:00:01
+# Errors: 3, Warnings: 3
+# Compile of busint.v was successful.
+# Compile of errors.v was successful.
+# Compile of mux.v was successful.
+# Compile of receive.v was successful.
+# Compile of ssp.v was successful.
+# Compile of t_errors.v was successful.
+# Compile of t_receive.v was successful.
+# Compile of t_ssp.v was successful.
+# Compile of t_transmit.v was successful.
+# Compile of transmit.v was successful.
+# 10 compiles, 0 failed with no errors.
+vsim work.t_transmit
+# vsim work.t_transmit 
+# Start time: 18:35:54 on Sep 10,2018
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.t_transmit(fast)
+quit -sim
+# End time: 18:36:01 on Sep 10,2018, Elapsed time: 0:00:07
+# Errors: 0, Warnings: 0
+vsim work.t_receive
+# vsim work.t_receive 
+# Start time: 18:36:27 on Sep 10,2018
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.t_receive(fast)
+# Loading work.Receive(fast)
+run -all
+# ** Note: $stop    : /userspace/k/kwilson33/ece551/modelsim/tutorial/t_receive.v(66)
+#    Time: 7905 ns  Iteration: 0  Instance: /t_receive
+# Break at /userspace/k/kwilson33/ece551/modelsim/tutorial/t_receive.v line 66
+vsim work.t_receive
+# End time: 18:39:03 on Sep 10,2018, Elapsed time: 0:02:36
+# Errors: 0, Warnings: 0
+# vsim work.t_receive 
+# Start time: 18:39:03 on Sep 10,2018
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.t_receive(fast)
+# Loading work.Receive(fast)
+quit -sim
+# End time: 18:39:11 on Sep 10,2018, Elapsed time: 0:00:08
+# Errors: 0, Warnings: 0
+vsim work.Receive
+# vsim work.Receive 
+# Start time: 18:39:22 on Sep 10,2018
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.Receive(fast)
+quit -sim
+# End time: 18:39:30 on Sep 10,2018, Elapsed time: 0:00:08
+# Errors: 0, Warnings: 0
+# Compile of busint.v was successful.
+# Compile of errors.v was successful.
+# Compile of mux.v was successful.
+# Compile of receive.v was successful.
+# Compile of ssp.v was successful.
+# Compile of t_errors.v was successful.
+# Compile of t_receive.v was successful.
+# Compile of t_ssp.v was successful.
+# Compile of t_transmit.v was successful.
+# Compile of transmit.v was successful.
+# 10 compiles, 0 failed with no errors.
+vsim work.t_receive
+# vsim work.t_receive 
+# Start time: 18:42:02 on Sep 10,2018
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.t_receive(fast)
+# End time: 18:44:27 on Sep 10,2018, Elapsed time: 0:02:25
+# Errors: 0, Warnings: 0

@@ -1,0 +1,17 @@
+I:/ece551/add3bit/add3bit.v {1 {vlog -work work -stats=none I:/ece551/add3bit/add3bit.v
+Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+-- Compiling module add3bit
+
+Top level modules:
+	add3bit
+
+} {} {}} I:/ece551/add3bit/add3bit_tb.v {2 {vlog -work work -stats=none I:/ece551/add3bit/add3bit_tb.v
+Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+-- Compiling module add3bit_tb
+** Warning: I:/ece551/add3bit/add3bit_tb.v(18): (vlog-2697) MSB of part-select into 'Cin_stim' is out of bounds.
+
+
+Top level modules:
+	add3bit_tb
+
+} {} {}}

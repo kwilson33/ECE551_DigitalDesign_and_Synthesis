@@ -1,0 +1,17 @@
+Z:/ece551/exercise05_saturate/saturate_tb.v {2 {vlog -work work -stats=none {Z:\ece551\exercise05_saturate\saturate_tb.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module saturate_tb
+** Warning: Z:\ece551\exercise05_saturate\saturate_tb.v(42): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+
+Top level modules:
+	saturate_tb
+
+} {} {}} Z:/ece551/exercise05_saturate/saturate.v {1 {vlog -work work -stats=none Z:/ece551/exercise05_saturate/saturate.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module saturate
+
+Top level modules:
+	saturate
+
+} {} {}}

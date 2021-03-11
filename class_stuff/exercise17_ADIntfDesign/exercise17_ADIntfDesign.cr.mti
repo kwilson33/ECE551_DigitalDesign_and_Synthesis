@@ -1,0 +1,8 @@
+I:/ece551/exercise17_ADIntfDesign/SPI_mstr16.sv {1 {vlog -work work -sv -stats=none I:/ece551/exercise17_ADIntfDesign/SPI_mstr16.sv
+Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+-- Compiling module SPI_mstr16
+
+Top level modules:
+	SPI_mstr16
+
+} {} {}}

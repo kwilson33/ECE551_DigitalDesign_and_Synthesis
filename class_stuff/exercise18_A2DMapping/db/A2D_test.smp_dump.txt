@@ -1,0 +1,14 @@
+
+State Machine - |A2D_test|A2D_intf:iDUT|state
+Name state.SPI_2 state.WAIT state.SPI_1 state.IDLE 
+state.IDLE 0 0 0 0 
+state.SPI_1 0 0 1 1 
+state.WAIT 0 1 0 1 
+state.SPI_2 1 0 0 1 
+
+State Machine - |A2D_test|A2D_intf:iDUT|SPI_mstr16:SPI_Interface|state
+Name state.FINAL state.SHIFT_WAIT state.SAMPLE_WAIT state.IDLE 
+state.IDLE 0 0 0 0 
+state.SAMPLE_WAIT 0 0 1 1 
+state.SHIFT_WAIT 0 1 0 1 
+state.FINAL 1 0 0 1 

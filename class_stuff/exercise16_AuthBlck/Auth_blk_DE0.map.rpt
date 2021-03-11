@@ -1,0 +1,443 @@
+Analysis & Synthesis report for Auth_blk_DE0
+Wed Nov 07 10:58:43 2018
+Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |Auth_blk_DE0|Auth_blk:iDUT|state
+  9. User-Specified and Inferred Latches
+ 10. Registers Removed During Synthesis
+ 11. General Register Statistics
+ 12. Inverted Register Statistics
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Port Connectivity Checks: "UART_tx:iTX"
+ 15. Post-Synthesis Netlist Statistics for Top Partition
+ 16. Elapsed Time Per Partition
+ 17. Analysis & Synthesis Messages
+ 18. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Wed Nov 07 10:58:43 2018       ;
+; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
+; Revision Name                      ; Auth_blk_DE0                                ;
+; Top-level Entity Name              ; Auth_blk_DE0                                ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 124                                         ;
+;     Total combinational functions  ; 120                                         ;
+;     Dedicated logic registers      ; 51                                          ;
+; Total registers                    ; 51                                          ;
+; Total pins                         ; 13                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP4CE22F17C6       ;                    ;
+; Top-level entity name                                                      ; Auth_blk_DE0       ; Auth_blk_DE0       ;
+; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                      ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                  ; Library ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------+---------+
+; UART_tx.sv                       ; yes             ; User SystemVerilog HDL File  ; I:/ece551/exercise16_AuthBlck/UART_tx.sv      ;         ;
+; UART_rcv.sv                      ; yes             ; User SystemVerilog HDL File  ; I:/ece551/exercise16_AuthBlck/UART_rcv.sv     ;         ;
+; rst_synch.sv                     ; yes             ; User SystemVerilog HDL File  ; I:/ece551/exercise16_AuthBlck/rst_synch.sv    ;         ;
+; PB_release.sv                    ; yes             ; User SystemVerilog HDL File  ; I:/ece551/exercise16_AuthBlck/PB_release.sv   ;         ;
+; Auth_blk_DE0.sv                  ; yes             ; User SystemVerilog HDL File  ; I:/ece551/exercise16_AuthBlck/Auth_blk_DE0.sv ;         ;
+; Auth_blk.sv                      ; yes             ; User SystemVerilog HDL File  ; I:/ece551/exercise16_AuthBlck/Auth_blk.sv     ;         ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 124       ;
+;                                             ;           ;
+; Total combinational functions               ; 120       ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 40        ;
+;     -- 3 input functions                    ; 40        ;
+;     -- <=2 input functions                  ; 40        ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 98        ;
+;     -- arithmetic mode                      ; 22        ;
+;                                             ;           ;
+; Total registers                             ; 51        ;
+;     -- Dedicated logic registers            ; 51        ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 13        ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 51        ;
+; Total fan-out                               ; 524       ;
+; Average fan-out                             ; 2.66      ;
++---------------------------------------------+-----------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                  ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------+--------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                           ; Entity Name  ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------+--------------+--------------+
+; |Auth_blk_DE0              ; 120 (0)           ; 51 (0)       ; 0           ; 0            ; 0       ; 0         ; 13   ; 0            ; |Auth_blk_DE0                                 ; Auth_blk_DE0 ; work         ;
+;    |Auth_blk:iDUT|         ; 67 (6)            ; 20 (2)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Auth_blk_DE0|Auth_blk:iDUT                   ; Auth_blk     ; work         ;
+;       |UART_rcv:receiver|  ; 61 (61)           ; 18 (18)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Auth_blk_DE0|Auth_blk:iDUT|UART_rcv:receiver ; UART_rcv     ; work         ;
+;    |PB_release:iPB|        ; 2 (2)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Auth_blk_DE0|PB_release:iPB                  ; PB_release   ; work         ;
+;    |UART_tx:iTX|           ; 51 (51)           ; 26 (26)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Auth_blk_DE0|UART_tx:iTX                     ; UART_tx      ; work         ;
+;    |rst_synch:iRST|        ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Auth_blk_DE0|rst_synch:iRST                  ; rst_synch    ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------+--------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------+
+; State Machine - |Auth_blk_DE0|Auth_blk:iDUT|state ;
++------------+-----------+------------+-------------+
+; Name       ; state.OFF ; state.PWR2 ; state.PWR1  ;
++------------+-----------+------------+-------------+
+; state.OFF  ; 0         ; 0          ; 0           ;
+; state.PWR1 ; 1         ; 0          ; 1           ;
+; state.PWR2 ; 1         ; 1          ; 0           ;
++------------+-----------+------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                     ;
++----------------------------------------------------+-------------------------------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal                       ; Free of Timing Hazards ;
++----------------------------------------------------+-------------------------------------------+------------------------+
+; Auth_blk:iDUT|UART_rcv:receiver|rx_shft_reg[5]     ; Auth_blk:iDUT|UART_rcv:receiver|LessThan0 ; yes                    ;
+; Auth_blk:iDUT|UART_rcv:receiver|rx_shft_reg[4]     ; Auth_blk:iDUT|UART_rcv:receiver|LessThan0 ; yes                    ;
+; Auth_blk:iDUT|UART_rcv:receiver|rx_shft_reg[3]     ; Auth_blk:iDUT|UART_rcv:receiver|LessThan0 ; yes                    ;
+; Auth_blk:iDUT|UART_rcv:receiver|rx_shft_reg[2]     ; Auth_blk:iDUT|UART_rcv:receiver|LessThan0 ; yes                    ;
+; Auth_blk:iDUT|UART_rcv:receiver|rx_shft_reg[1]     ; Auth_blk:iDUT|UART_rcv:receiver|LessThan0 ; yes                    ;
+; Auth_blk:iDUT|UART_rcv:receiver|rx_shft_reg[0]     ; Auth_blk:iDUT|UART_rcv:receiver|LessThan0 ; yes                    ;
+; Auth_blk:iDUT|UART_rcv:receiver|rx_shft_reg[7]     ; Auth_blk:iDUT|UART_rcv:receiver|LessThan0 ; yes                    ;
+; Auth_blk:iDUT|UART_rcv:receiver|rx_shft_reg[6]     ; Auth_blk:iDUT|UART_rcv:receiver|LessThan0 ; yes                    ;
+; Auth_blk:iDUT|UART_rcv:receiver|rx_shft_reg[8]     ; Auth_blk:iDUT|UART_rcv:receiver|LessThan0 ; yes                    ;
+; Number of user-specified and inferred latches = 9  ;                                           ;                        ;
++----------------------------------------------------+-------------------------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------------+
+; Registers Removed During Synthesis                         ;
++---------------------------------------+--------------------+
+; Register name                         ; Reason for Removal ;
++---------------------------------------+--------------------+
+; Auth_blk:iDUT|state.PWR2              ; Lost fanout        ;
+; Total Number of Removed Registers = 1 ;                    ;
++---------------------------------------+--------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 51    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 8     ;
+; Number of registers using Asynchronous Clear ; 19    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 15    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------+
+; Inverted Register Statistics                      ;
++-----------------------------------------+---------+
+; Inverted Register                       ; Fan out ;
++-----------------------------------------+---------+
+; UART_tx:iTX|tx_shft_reg[0]              ; 14      ;
+; PB_release:iPB|pre3                     ; 3       ;
+; PB_release:iPB|pre2                     ; 4       ;
+; UART_tx:iTX|tx_shft_reg[1]              ; 1       ;
+; PB_release:iPB|pre1                     ; 1       ;
+; UART_tx:iTX|tx_shft_reg[2]              ; 1       ;
+; UART_tx:iTX|tx_shft_reg[3]              ; 1       ;
+; UART_tx:iTX|tx_shft_reg[4]              ; 2       ;
+; UART_tx:iTX|tx_shft_reg[5]              ; 1       ;
+; UART_tx:iTX|tx_shft_reg[6]              ; 1       ;
+; UART_tx:iTX|tx_shft_reg[7]              ; 1       ;
+; UART_tx:iTX|tx_shft_reg[8]              ; 2       ;
+; Total number of inverted registers = 12 ;         ;
++-----------------------------------------+---------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------+
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Auth_blk_DE0|Auth_blk:iDUT|UART_rcv:receiver|baud_cnt[11] ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |Auth_blk_DE0|UART_tx:iTX|tx_shft_reg[1]                   ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |Auth_blk_DE0|UART_tx:iTX|tx_shft_reg[3]                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "UART_tx:iTX"                                                                                 ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port          ; Type   ; Severity ; Details                                                                             ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; tx_data[6..5] ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; tx_data[1..0] ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; tx_data[7]    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; tx_data[3]    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; tx_done       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 13                          ;
+; cycloneiii_ff         ; 51                          ;
+;     CLR               ; 13                          ;
+;     ENA               ; 9                           ;
+;     ENA CLR           ; 6                           ;
+;     SLD               ; 8                           ;
+;     plain             ; 15                          ;
+; cycloneiii_lcell_comb ; 121                         ;
+;     arith             ; 22                          ;
+;         2 data inputs ; 22                          ;
+;     normal            ; 99                          ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 3                           ;
+;         2 data inputs ; 15                          ;
+;         3 data inputs ; 40                          ;
+;         4 data inputs ; 40                          ;
+;                       ;                             ;
+; Max LUT depth         ; 4.10                        ;
+; Average LUT depth     ; 3.19                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+    Info: Processing started: Wed Nov 07 10:58:22 2018
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Auth_blk_DE0 -c Auth_blk_DE0
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file uart_tx.sv
+    Info (12023): Found entity 1: UART_tx File: I:/ece551/exercise16_AuthBlck/UART_tx.sv Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file uart_rcv.sv
+    Info (12023): Found entity 1: UART_rcv File: I:/ece551/exercise16_AuthBlck/UART_rcv.sv Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file rst_synch.sv
+    Info (12023): Found entity 1: rst_synch File: I:/ece551/exercise16_AuthBlck/rst_synch.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file pb_release.sv
+    Info (12023): Found entity 1: PB_release File: I:/ece551/exercise16_AuthBlck/PB_release.sv Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file auth_blk_de0.sv
+    Info (12023): Found entity 1: Auth_blk_DE0 File: I:/ece551/exercise16_AuthBlck/Auth_blk_DE0.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file auth_blk.sv
+    Info (12023): Found entity 1: Auth_blk File: I:/ece551/exercise16_AuthBlck/Auth_blk.sv Line: 2
+Warning (10236): Verilog HDL Implicit Net warning at Auth_blk_DE0.sv(28): created implicit net for "RX" File: I:/ece551/exercise16_AuthBlck/Auth_blk_DE0.sv Line: 28
+Warning (10236): Verilog HDL Implicit Net warning at Auth_blk_DE0.sv(33): created implicit net for "trmt" File: I:/ece551/exercise16_AuthBlck/Auth_blk_DE0.sv Line: 33
+Warning (10236): Verilog HDL Implicit Net warning at Auth_blk_DE0.sv(44): created implicit net for "tx_done" File: I:/ece551/exercise16_AuthBlck/Auth_blk_DE0.sv Line: 44
+Info (12127): Elaborating entity "Auth_blk_DE0" for the top level hierarchy
+Info (12128): Elaborating entity "Auth_blk" for hierarchy "Auth_blk:iDUT" File: I:/ece551/exercise16_AuthBlck/Auth_blk_DE0.sv Line: 28
+Info (12128): Elaborating entity "UART_rcv" for hierarchy "Auth_blk:iDUT|UART_rcv:receiver" File: I:/ece551/exercise16_AuthBlck/Auth_blk.sv Line: 17
+Warning (10230): Verilog HDL assignment warning at UART_rcv.sv(81): truncated value with size 32 to match size of target (4) File: I:/ece551/exercise16_AuthBlck/UART_rcv.sv Line: 81
+Warning (10230): Verilog HDL assignment warning at UART_rcv.sv(100): truncated value with size 32 to match size of target (12) File: I:/ece551/exercise16_AuthBlck/UART_rcv.sv Line: 100
+Critical Warning (10237): Verilog HDL warning at UART_rcv.sv(116): can't infer register for assignment in edge-triggered always construct because the clock isn't obvious. Generated combinational logic instead File: I:/ece551/exercise16_AuthBlck/UART_rcv.sv Line: 116
+Critical Warning (10237): Verilog HDL warning at UART_rcv.sv(117): can't infer register for assignment in edge-triggered always construct because the clock isn't obvious. Generated combinational logic instead File: I:/ece551/exercise16_AuthBlck/UART_rcv.sv Line: 117
+Warning (10240): Verilog HDL Always Construct warning at UART_rcv.sv(111): inferring latch(es) for variable "rx_shft_reg", which holds its previous value in one or more paths through the always construct File: I:/ece551/exercise16_AuthBlck/UART_rcv.sv Line: 111
+Info (10041): Inferred latch for "rx_shft_reg[0]" at UART_rcv.sv(111) File: I:/ece551/exercise16_AuthBlck/UART_rcv.sv Line: 111
+Info (10041): Inferred latch for "rx_shft_reg[1]" at UART_rcv.sv(111) File: I:/ece551/exercise16_AuthBlck/UART_rcv.sv Line: 111
+Info (10041): Inferred latch for "rx_shft_reg[2]" at UART_rcv.sv(111) File: I:/ece551/exercise16_AuthBlck/UART_rcv.sv Line: 111
+Info (10041): Inferred latch for "rx_shft_reg[3]" at UART_rcv.sv(111) File: I:/ece551/exercise16_AuthBlck/UART_rcv.sv Line: 111
+Info (10041): Inferred latch for "rx_shft_reg[4]" at UART_rcv.sv(111) File: I:/ece551/exercise16_AuthBlck/UART_rcv.sv Line: 111
+Info (10041): Inferred latch for "rx_shft_reg[5]" at UART_rcv.sv(111) File: I:/ece551/exercise16_AuthBlck/UART_rcv.sv Line: 111
+Info (10041): Inferred latch for "rx_shft_reg[6]" at UART_rcv.sv(111) File: I:/ece551/exercise16_AuthBlck/UART_rcv.sv Line: 111
+Info (10041): Inferred latch for "rx_shft_reg[7]" at UART_rcv.sv(111) File: I:/ece551/exercise16_AuthBlck/UART_rcv.sv Line: 111
+Info (10041): Inferred latch for "rx_shft_reg[8]" at UART_rcv.sv(111) File: I:/ece551/exercise16_AuthBlck/UART_rcv.sv Line: 111
+Info (12128): Elaborating entity "PB_release" for hierarchy "PB_release:iPB" File: I:/ece551/exercise16_AuthBlck/Auth_blk_DE0.sv Line: 33
+Info (12128): Elaborating entity "rst_synch" for hierarchy "rst_synch:iRST" File: I:/ece551/exercise16_AuthBlck/Auth_blk_DE0.sv Line: 38
+Info (12128): Elaborating entity "UART_tx" for hierarchy "UART_tx:iTX" File: I:/ece551/exercise16_AuthBlck/Auth_blk_DE0.sv Line: 44
+Warning (10858): Verilog HDL warning at uart_tx.sv(9): object clr_done used but never assigned File: I:/ece551/exercise16_AuthBlck/uart_tx.sv Line: 9
+Warning (10230): Verilog HDL assignment warning at uart_tx.sv(89): truncated value with size 32 to match size of target (4) File: I:/ece551/exercise16_AuthBlck/uart_tx.sv Line: 89
+Warning (10230): Verilog HDL assignment warning at uart_tx.sv(108): truncated value with size 32 to match size of target (12) File: I:/ece551/exercise16_AuthBlck/uart_tx.sv Line: 108
+Warning (10030): Net "clr_done" at uart_tx.sv(9) has no driver or initial value, using a default initial value '0' File: I:/ece551/exercise16_AuthBlck/uart_tx.sv Line: 9
+Info (13000): Registers with preset signals will power-up high File: I:/ece551/exercise16_AuthBlck/uart_tx.sv Line: 121
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "LED[1]" is stuck at GND File: I:/ece551/exercise16_AuthBlck/Auth_blk_DE0.sv Line: 9
+    Warning (13410): Pin "LED[2]" is stuck at GND File: I:/ece551/exercise16_AuthBlck/Auth_blk_DE0.sv Line: 9
+    Warning (13410): Pin "LED[3]" is stuck at GND File: I:/ece551/exercise16_AuthBlck/Auth_blk_DE0.sv Line: 9
+    Warning (13410): Pin "LED[4]" is stuck at GND File: I:/ece551/exercise16_AuthBlck/Auth_blk_DE0.sv Line: 9
+    Warning (13410): Pin "LED[5]" is stuck at GND File: I:/ece551/exercise16_AuthBlck/Auth_blk_DE0.sv Line: 9
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 1 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file I:/ece551/exercise16_AuthBlck/Auth_blk_DE0.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 138 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 5 input pins
+    Info (21059): Implemented 8 output pins
+    Info (21061): Implemented 125 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 19 warnings
+    Info: Peak virtual memory: 5026 megabytes
+    Info: Processing ended: Wed Nov 07 10:58:43 2018
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:28
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in I:/ece551/exercise16_AuthBlck/Auth_blk_DE0.map.smsg.
+
+

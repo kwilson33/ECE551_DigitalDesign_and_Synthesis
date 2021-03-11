@@ -1,0 +1,79 @@
+#Read in Veriolog files #
+##########################
+read_file -format verilog { ./UART_tx.v\
+			    ./UART_rcv.v\
+			    ./UART.v\
+			    ./CRC.v\
+			    ./commMod.v}
+
+
+
+#Set current design to top level #
+###################################
+set current_design commMod
+
+
+
+#Create the clock
+###################################
+create_clock -name "clk" -period 2 -waveform {0 1} {clk}
+set_dont_touch_network [find port clk]
+
+
+
+#Setting input delay
+###################################
+set prim_inputs [remove_from_collection [all_inputs]\
+ [find port clk]]
+
+set_input_delay -clock clk 0.5 $prim_inputs
+
+
+
+
+#Set driving strengths
+###################################
+set_driving_cell -lib_cell AO33D0BWP -from_pin A1 -library\
+ tcbn40lpbwptc $prim_inputs
+
+set_drive 0.1 rst_n
+
+
+
+#Set wire load/ parastic capacitances
+###################################
+set_wire_load_model -name TSMC32K_Lowk_Conservative \
+ -library tcbn40lpbwptc
+
+
+
+#Set transition times
+###################################
+set_max_transition 0.1 [current_design]
+
+
+
+#Compile the design
+###################################
+compile -map_effort medium
+
+
+
+
+#Pipe out timing and area reports
+###################################
+report_timing -delay max > timingMax.rpt
+report_timing -delay min > timingMin.rpt
+report_area  		 > area.rpt
+
+
+
+#Write out resulting synthesized netlist
+###################################
+write -format verilog commMod -output commMod.vg
+
+
+
+
+
+

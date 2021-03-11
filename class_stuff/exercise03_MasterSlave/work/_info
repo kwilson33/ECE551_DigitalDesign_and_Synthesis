@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/AppV5/Quartus_16.v2
+vmasterSlaveFF
+!s110 1537200434
+!i10b 1
+!s100 2[PX5DUZ^_mWPI[iS1M]V3
+IMYVi5deMJfQTO8K:BIHjW3
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+Z1 dI:/ece551/exercise03
+w1537200431
+8I:/ece551/exercise03/masterSlaveFF.v
+FI:/ece551/exercise03/masterSlaveFF.v
+L0 1
+Z2 OV;L;10.4d;61
+r1
+!s85 0
+31
+!s108 1537200434.000000
+!s107 I:/ece551/exercise03/masterSlaveFF.v|
+!s90 -reportprogress|300|-work|work|-stats=none|I:/ece551/exercise03/masterSlaveFF.v|
+!i113 1
+Z3 o-work work
+nmaster@slave@f@f
+vmasterSlaveFF_tb
+!s110 1537201435
+!i10b 1
+!s100 73^CTlKHjI<n^Mog`46<K2
+Igdf2B69Nd_7]0;l53A5nK2
+R0
+R1
+w1537201092
+8I:/ece551/exercise03/masterSlaveFF_tb.v
+FI:/ece551/exercise03/masterSlaveFF_tb.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1537201435.000000
+!s107 I:/ece551/exercise03/masterSlaveFF_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|I:/ece551/exercise03/masterSlaveFF_tb.v|
+!i113 1
+R3
+nmaster@slave@f@f_tb

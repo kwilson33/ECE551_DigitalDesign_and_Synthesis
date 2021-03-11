@@ -1,0 +1,43 @@
+I:/ece551/exercise16_AuthBlck/rst_synch.sv {1 {vlog -work work -sv -stats=none I:/ece551/exercise16_AuthBlck/rst_synch.sv
+Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+-- Compiling module rst_synch
+
+Top level modules:
+	rst_synch
+
+} {} {}} I:/ece551/exercise16_AuthBlck/PB_release.sv {1 {vlog -work work -sv -stats=none I:/ece551/exercise16_AuthBlck/PB_release.sv
+Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+-- Compiling module PB_release
+
+Top level modules:
+	PB_release
+
+} {} {}} I:/ece551/exercise16_AuthBlck/Auth_blk_DE0.sv {1 {vlog -work work -sv -stats=none I:/ece551/exercise16_AuthBlck/Auth_blk_DE0.sv
+Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+-- Compiling module Auth_blk_DE0
+
+Top level modules:
+	Auth_blk_DE0
+
+} {} {}} I:/ece551/exercise16_AuthBlck/UART_rcv.sv {1 {vlog -work work -sv -stats=none I:/ece551/exercise16_AuthBlck/UART_rcv.sv
+Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+-- Compiling module UART_rcv
+
+Top level modules:
+	UART_rcv
+
+} {} {}} I:/ece551/exercise16_AuthBlck/UART_tx.sv {1 {vlog -work work -sv -stats=none I:/ece551/exercise16_AuthBlck/UART_tx.sv
+Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+-- Compiling module UART_tx
+
+Top level modules:
+	UART_tx
+
+} {} {}} I:/ece551/exercise16_AuthBlck/Auth_blk_tb.sv {1 {vlog -work work -sv -stats=none I:/ece551/exercise16_AuthBlck/Auth_blk_tb.sv
+Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+-- Compiling module Auth_blk_tb
+
+Top level modules:
+	Auth_blk_tb
+
+} {} {}}

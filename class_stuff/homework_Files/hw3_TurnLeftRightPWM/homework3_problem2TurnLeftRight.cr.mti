@@ -1,0 +1,17 @@
+Z:/ece551/hw3_TurnLeftRightPWM/PWM11.sv {2 {vlog -work work -sv -stats=none Z:/ece551/hw3_TurnLeftRightPWM/PWM11.sv
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module PWM11
+** Warning: Z:/ece551/hw3_TurnLeftRightPWM/PWM11.sv(21): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+
+Top level modules:
+	PWM11
+
+} {} {}} Z:/ece551/hw3_TurnLeftRightPWM/mtr_drv.sv {1 {vlog -work work -sv -stats=none Z:/ece551/hw3_TurnLeftRightPWM/mtr_drv.sv
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module mtr_drv
+
+Top level modules:
+	mtr_drv
+
+} {} {}}

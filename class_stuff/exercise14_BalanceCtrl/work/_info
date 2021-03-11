@@ -1,0 +1,53 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dI:/ece551/exercise14_RandomTesting
+vbalance_cntrl
+DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+Z0 !s110 1540828906
+!i10b 1
+!s100 5@HA>=FlbdELkLEhNOz2^0
+IkKc:mI]iojl60;B;6jc;R0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+!s105 balance_cntrl_sv_unit
+S1
+Z2 dI:/ece551/exercise14_BalanceCtrl
+w1540578979
+8I:/ece551/exercise14_BalanceCtrl/balance_cntrl.sv
+FI:/ece551/exercise14_BalanceCtrl/balance_cntrl.sv
+L0 2
+Z3 OV;L;10.4d;61
+r1
+!s85 0
+31
+!s108 1540828906.000000
+!s107 I:/ece551/exercise14_BalanceCtrl/balance_cntrl.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|I:/ece551/exercise14_BalanceCtrl/balance_cntrl.sv|
+!i113 1
+o-work work -sv
+vbalance_cntrl_dbg_tb
+R0
+!i10b 1
+!s100 K][KJF@@8a3O^InBiR8jU0
+I41Y9O7fZURFnG]EYJi43^0
+R1
+R2
+w1540577900
+8I:/ece551/exercise14_BalanceCtrl/balance_cntrl_dbg_tb.v
+FI:/ece551/exercise14_BalanceCtrl/balance_cntrl_dbg_tb.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1540828905.000000
+!s107 I:/ece551/exercise14_BalanceCtrl/balance_cntrl_dbg_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|I:/ece551/exercise14_BalanceCtrl/balance_cntrl_dbg_tb.v|
+!i113 1
+o-work work

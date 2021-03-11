@@ -1,0 +1,49 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : mult_accum_gated
+Version: N-2017.09-SP5
+Date   : Mon Nov 19 11:07:13 2018
+****************************************
+
+Operating Conditions: NCCOM   Library: tcbn40lpbwptc
+Wire Load Model Mode: segmented
+
+  Startpoint: en_stg2_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: clk_en_lat_stg2_reg
+            (negative level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mult_accum_gated   TSMC32K_Lowk_Conservative
+                                           tcbn40lpbwptc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    2.50       2.50
+  clock network delay (ideal)              0.00       2.50
+  en_stg2_reg/CP (DFQD1BWP)                0.00       2.50 r
+  en_stg2_reg/Q (DFQD1BWP)                 0.10       2.60 r
+  U7/Z (OR2D1BWP)                          0.05       2.64 r
+  clk_en_lat_stg2_reg/D (LNQD1BWP)         0.00       2.64 r
+  data arrival time                                   2.64
+
+  clock clk (rise edge)                    2.50       2.50
+  clock network delay (ideal)              0.00       2.50
+  clk_en_lat_stg2_reg/EN (LNQD1BWP)        0.00       2.50 r
+  library hold time                       -0.03       2.47
+  data required time                                  2.47
+  -----------------------------------------------------------
+  data required time                                  2.47
+  data arrival time                                  -2.64
+  -----------------------------------------------------------
+  slack (MET)                                         0.17
+
+
+1

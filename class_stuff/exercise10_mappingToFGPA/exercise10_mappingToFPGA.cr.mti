@@ -1,0 +1,38 @@
+I:/ece551/exercise10_mappingToFGPA/PWM11_test.sv {1 {vlog -work work -sv -stats=none I:/ece551/exercise10_mappingToFGPA/PWM11_test.sv
+Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+-- Compiling module PWM11_test
+
+Top level modules:
+	PWM11_test
+
+} {} {}} I:/ece551/exercise10_mappingToFGPA/up_dwn_cnt4.sv {1 {vlog -work work -sv -stats=none I:/ece551/exercise10_mappingToFGPA/up_dwn_cnt4.sv
+Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+-- Compiling module up_dwn_cnt4
+
+Top level modules:
+	up_dwn_cnt4
+
+} {} {}} I:/ece551/exercise10_mappingToFGPA/rst_synch.sv {1 {vlog -work work -sv -stats=none I:/ece551/exercise10_mappingToFGPA/rst_synch.sv
+Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+-- Compiling module rst_synch
+
+Top level modules:
+	rst_synch
+
+} {} {}} I:/ece551/exercise10_mappingToFGPA/PWM11.sv {2 {vlog -work work -sv -stats=none I:/ece551/exercise10_mappingToFGPA/PWM11.sv
+Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+-- Compiling module PWM11
+** Warning: I:/ece551/exercise10_mappingToFGPA/PWM11.sv(21): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+
+Top level modules:
+	PWM11
+
+} {} {}} I:/ece551/exercise10_mappingToFGPA/PB_release.sv {1 {vlog -work work -sv -stats=none I:/ece551/exercise10_mappingToFGPA/PB_release.sv
+Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+-- Compiling module PB_release
+
+Top level modules:
+	PB_release
+
+} {} {}}

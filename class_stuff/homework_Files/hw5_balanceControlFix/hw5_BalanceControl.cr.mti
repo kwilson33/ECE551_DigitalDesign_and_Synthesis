@@ -1,0 +1,17 @@
+I:/ece551/hw5_balanceControlFix/balance_cntrl.sv {2 {vlog -work work -sv -stats=none I:/ece551/hw5_balanceControlFix/balance_cntrl.sv
+Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+-- Compiling module balance_cntrl
+** Warning: I:/ece551/hw5_balanceControlFix/balance_cntrl.sv(215): (vlog-2697) MSB of part-select into 'ptch_I_term' is out of bounds.
+
+
+Top level modules:
+	balance_cntrl
+
+} {} {}} I:/ece551/hw5_balanceControlFix/balance_cntrl_dbg_tb.v {1 {vlog -work work -stats=none I:/ece551/hw5_balanceControlFix/balance_cntrl_dbg_tb.v
+Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+-- Compiling module balance_cntrl_dbg_tb
+
+Top level modules:
+	balance_cntrl_dbg_tb
+
+} {} {}}

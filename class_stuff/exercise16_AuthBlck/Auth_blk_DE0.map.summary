@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Nov 07 10:58:43 2018
+Quartus Prime Version : 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+Revision Name : Auth_blk_DE0
+Top-level Entity Name : Auth_blk_DE0
+Family : Cyclone IV E
+Total logic elements : 124
+    Total combinational functions : 120
+    Dedicated logic registers : 51
+Total registers : 51
+Total pins : 13
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

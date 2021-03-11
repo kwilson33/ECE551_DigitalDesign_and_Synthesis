@@ -1,0 +1,15 @@
+I:/ece551/hw2_adder/adder.v {1 {vlog -work work -stats=none I:/ece551/hw2_adder/adder.v
+Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+-- Compiling module adder
+
+Top level modules:
+	adder
+
+} {} {}} I:/ece551/hw2_adder/adder_tb.v {1 {vlog -work work -stats=none I:/ece551/hw2_adder/adder_tb.v
+Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+-- Compiling module adder_tb
+
+Top level modules:
+	adder_tb
+
+} {} {}}

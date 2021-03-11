@@ -1,0 +1,53 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/AppV5/Quartus_16.v2
+vcounter
+DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+!s110 1536593191
+!i10b 1
+!s100 TFDZ]9Ro=mCjXLOACddZz1
+Ia^z:KHm;N:@^Fgz`WoVe]0
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+!s105 counter_sv_unit
+S1
+Z1 dI:/ece551/exercise01
+w1536592567
+8I:/ece551/exercise01/counter.sv
+FI:/ece551/exercise01/counter.sv
+L0 1
+Z2 OV;L;10.4d;61
+r1
+!s85 0
+31
+!s108 1536593191.000000
+!s107 I:/ece551/exercise01/counter.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|I:/ece551/exercise01/counter.sv|
+!i113 1
+o-work work -sv
+vup_dwn_tb
+!s110 1536593190
+!i10b 1
+!s100 bKK7iaMNb<U^h6SWO?f642
+Il_[N3ihG7oNoIKHCl;jDa0
+R0
+R1
+w1536592250
+8I:\ece551\exercise01\counter_tb.v
+FI:\ece551\exercise01\counter_tb.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1536593190.000000
+!s107 I:\ece551\exercise01\counter_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|I:\ece551\exercise01\counter_tb.v|
+!i113 1
+o-work work

@@ -1,0 +1,52 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : SPI_mstr16
+Version: N-2017.09-SP5
+Date   : Tue Nov 13 15:51:44 2018
+****************************************
+
+Operating Conditions: NCCOM   Library: tcbn40lpbwptc
+Wire Load Model Mode: segmented
+
+  Startpoint: wrt (input port clocked by clk)
+  Endpoint: shft_reg_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SPI_mstr16         TSMC32K_Lowk_Conservative
+                                           tcbn40lpbwptc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.70       0.70 r
+  wrt (in)                                 0.00       0.70 r
+  U217/Z (BUFFD6BWP)                       0.07       0.77 r
+  U220/ZN (NR2D0BWP)                       0.05       0.82 f
+  U219/Z (CKBD4BWP)                        0.07       0.89 f
+  U215/Z (AO222D0BWP)                      0.16       1.05 f
+  shft_reg_reg[0]/D (DFQD1BWP)             0.00       1.05 f
+  data arrival time                                   1.05
+
+  clock clk (rise edge)                    2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  shft_reg_reg[0]/CP (DFQD1BWP)            0.00       2.00 r
+  library setup time                      -0.02       1.98
+  data required time                                  1.98
+  -----------------------------------------------------------
+  data required time                                  1.98
+  data arrival time                                  -1.05
+  -----------------------------------------------------------
+  slack (MET)                                         0.93
+
+
+1

@@ -1,0 +1,56 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/AppV5/Quartus_16.v2
+vmult_accum
+Z0 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+!s110 1542647088
+!i10b 1
+!s100 V[69o_WTh^[l=n[KD2^Fg0
+IX?o5h<@boH0Q6<FDTjYZ^1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+!s105 mult_accum_sv_unit
+S1
+Z2 dI:/ece551/exercise20GatedClocks
+w1542642080
+8I:/ece551/exercise20GatedClocks/mult_accum.sv
+FI:/ece551/exercise20GatedClocks/mult_accum.sv
+L0 1
+Z3 OV;L;10.4d;61
+r1
+!s85 0
+31
+!s108 1542647087.000000
+!s107 I:/ece551/exercise20GatedClocks/mult_accum.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|I:/ece551/exercise20GatedClocks/mult_accum.sv|
+!i113 1
+Z4 o-work work -sv
+vmult_accum_gated
+R0
+!s110 1542647146
+!i10b 1
+!s100 hH018PGK@IF0lYFfTWkbk0
+IJm_UG96MfO:dFT8KZY0ZG0
+R1
+!s105 mult_accum_gated_sv_unit
+S1
+R2
+w1542647141
+8I:/ece551/exercise20GatedClocks/mult_accum_gated.sv
+FI:/ece551/exercise20GatedClocks/mult_accum_gated.sv
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1542647146.000000
+!s107 I:/ece551/exercise20GatedClocks/mult_accum_gated.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|I:/ece551/exercise20GatedClocks/mult_accum_gated.sv|
+!i113 1
+R4

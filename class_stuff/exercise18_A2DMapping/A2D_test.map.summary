@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Nov 14 11:04:54 2018
+Quartus Prime Version : 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+Revision Name : A2D_test
+Top-level Entity Name : A2D_test
+Family : Cyclone IV E
+Total logic elements : 130
+    Total combinational functions : 102
+    Dedicated logic registers : 89
+Total registers : 89
+Total pins : 15
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

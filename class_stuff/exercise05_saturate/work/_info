@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/AppV5/Quartus_16.v2
+vsaturate
+!s110 1538415603
+!i10b 1
+!s100 H=7KO[z?]20h1NJTm<mlk3
+IdddKe0X6OIfk3VM[W7aLR3
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+Z1 dZ:/ece551/exercise05_saturate
+w1538415527
+8Z:/ece551/exercise05_saturate/saturate.v
+FZ:/ece551/exercise05_saturate/saturate.v
+L0 1
+Z2 OP;L;10.4a;61
+r1
+!s85 0
+31
+!s108 1538415602.000000
+!s107 Z:/ece551/exercise05_saturate/saturate.v|
+!s90 -reportprogress|300|-work|work|-stats=none|Z:/ece551/exercise05_saturate/saturate.v|
+!s101 -O0
+!i113 1
+Z3 o-work work -O0
+vsaturate_tb
+!s110 1538435294
+!i10b 1
+!s100 8:a6[1OG]0Je2UU3>c6Gi0
+I=]5YV5IHO9UaAe54hB<8_3
+R0
+R1
+w1538435218
+8Z:\ece551\exercise05_saturate\saturate_tb.v
+FZ:\ece551\exercise05_saturate\saturate_tb.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1538435294.000000
+!s107 Z:\ece551\exercise05_saturate\saturate_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|Z:\ece551\exercise05_saturate\saturate_tb.v|
+!s101 -O0
+!i113 1
+R3

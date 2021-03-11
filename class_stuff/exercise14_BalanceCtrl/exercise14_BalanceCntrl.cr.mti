@@ -1,0 +1,15 @@
+I:/ece551/exercise14_BalanceCtrl/balance_cntrl_dbg_tb.v {1 {vlog -work work -stats=none I:/ece551/exercise14_BalanceCtrl/balance_cntrl_dbg_tb.v
+Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+-- Compiling module balance_cntrl_dbg_tb
+
+Top level modules:
+	balance_cntrl_dbg_tb
+
+} {} {}} I:/ece551/exercise14_BalanceCtrl/balance_cntrl.sv {1 {vlog -work work -sv -stats=none I:/ece551/exercise14_BalanceCtrl/balance_cntrl.sv
+Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+-- Compiling module balance_cntrl
+
+Top level modules:
+	balance_cntrl
+
+} {} {}}

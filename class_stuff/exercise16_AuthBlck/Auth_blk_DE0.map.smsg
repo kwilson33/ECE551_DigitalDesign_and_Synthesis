@@ -1,0 +1,4 @@
+Info (10281): Verilog HDL Declaration information at UART_tx.sv(14): object "transmitting" differs only in case from object "TRANSMITTING" in the same scope File: I:/ece551/exercise16_AuthBlck/UART_tx.sv Line: 14
+Info (10281): Verilog HDL Declaration information at UART_rcv.sv(16): object "receiving" differs only in case from object "RECEIVING" in the same scope File: I:/ece551/exercise16_AuthBlck/UART_rcv.sv Line: 16
+Info (10281): Verilog HDL Declaration information at rst_synch.sv(5): object "RST_n" differs only in case from object "rst_n" in the same scope File: I:/ece551/exercise16_AuthBlck/rst_synch.sv Line: 5
+Info (10281): Verilog HDL Declaration information at Auth_blk_DE0.sv(4): object "RST_n" differs only in case from object "rst_n" in the same scope File: I:/ece551/exercise16_AuthBlck/Auth_blk_DE0.sv Line: 4

@@ -1,0 +1,51 @@
+/userspace/k/kwilson33/ece551/testingInertialInterface/SegwayModel.sv {2 {vlog -work work -vopt -sv -stats=none /userspace/k/kwilson33/ece551/testingInertialInterface/SegwayModel.sv
+QuestaSim-64 vlog 10.6a Compiler 2017.03 Mar 16 2017
+-- Compiling module SegwayModel
+** Warning: /userspace/k/kwilson33/ece551/testingInertialInterface/SegwayModel.sv(139): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+Top level modules:
+	SegwayModel
+
+} {} {}} /userspace/k/kwilson33/ece551/testingInertialInterface/rst_synch.sv {1 {vlog -work work -vopt -sv -stats=none /userspace/k/kwilson33/ece551/testingInertialInterface/rst_synch.sv
+QuestaSim-64 vlog 10.6a Compiler 2017.03 Mar 16 2017
+-- Compiling module rst_synch
+
+Top level modules:
+	rst_synch
+
+} {} {}} /userspace/k/kwilson33/ece551/testingInertialInterface/inert_intf_test.sv {1 {vlog -work work -vopt -sv -stats=none /userspace/k/kwilson33/ece551/testingInertialInterface/inert_intf_test.sv
+QuestaSim-64 vlog 10.6a Compiler 2017.03 Mar 16 2017
+-- Compiling module inert_intf_test
+
+Top level modules:
+	inert_intf_test
+
+} {} {}} /userspace/k/kwilson33/ece551/testingInertialInterface/inertial_integrator.sv {1 {vlog -work work -vopt -sv -stats=none /userspace/k/kwilson33/ece551/testingInertialInterface/inertial_integrator.sv
+QuestaSim-64 vlog 10.6a Compiler 2017.03 Mar 16 2017
+-- Compiling module inertial_integrator
+
+Top level modules:
+	inertial_integrator
+
+} {} {}} /userspace/k/kwilson33/ece551/testingInertialInterface/inert_intf.sv {1 {vlog -work work -vopt -sv -stats=none /userspace/k/kwilson33/ece551/testingInertialInterface/inert_intf.sv
+QuestaSim-64 vlog 10.6a Compiler 2017.03 Mar 16 2017
+-- Compiling module inert_intf
+
+Top level modules:
+	inert_intf
+
+} {} {}} /userspace/k/kwilson33/ece551/testingInertialInterface/inert_intf_tb.sv {1 {vlog -work work -vopt -sv -stats=none /userspace/k/kwilson33/ece551/testingInertialInterface/inert_intf_tb.sv
+QuestaSim-64 vlog 10.6a Compiler 2017.03 Mar 16 2017
+-- Compiling module inert_intf_tb
+
+Top level modules:
+	inert_intf_tb
+
+} {} {}} /userspace/k/kwilson33/ece551/testingInertialInterface/SPI_mstr16.sv {1 {vlog -work work -vopt -sv -stats=none /userspace/k/kwilson33/ece551/testingInertialInterface/SPI_mstr16.sv
+QuestaSim-64 vlog 10.6a Compiler 2017.03 Mar 16 2017
+-- Compiling module SPI_mstr16
+
+Top level modules:
+	SPI_mstr16
+
+} {} {}}

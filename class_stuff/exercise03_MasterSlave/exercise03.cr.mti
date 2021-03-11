@@ -1,0 +1,17 @@
+I:/ece551/exercise03/masterSlaveFF.v {1 {vlog -work work -stats=none I:/ece551/exercise03/masterSlaveFF.v
+Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+-- Compiling module masterSlaveFF
+
+Top level modules:
+	masterSlaveFF
+
+} {} {}} I:/ece551/exercise03/masterSlaveFF_tb.v {2 {vlog -work work -stats=none I:/ece551/exercise03/masterSlaveFF_tb.v
+Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+-- Compiling module masterSlaveFF_tb
+** Warning: I:/ece551/exercise03/masterSlaveFF_tb.v(25): (vlog-2283) Extra semicolon in $unit (global) scope.
+
+
+Top level modules:
+	masterSlaveFF_tb
+
+} {} {}}

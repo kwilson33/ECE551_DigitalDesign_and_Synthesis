@@ -1,0 +1,113 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/userspace/k/kwilson33/ece551/exercise15_SPITransceiver
+T_opt
+!s110 1542146723
+Vk]W3o0LN<6XZP>iR5deC^2
+04 13 4 work SPI_mstr16_tb fast 0
+=1-000ae431a4f1-5beb4aa2-dee2f-7be36
+o-quiet -auto_acc_if_foreign -work work -L /userspace/k/kwilson33/ece551/TSMC_lib
+Z1 tCvgOpt 0
+n@_opt
+OL;O;10.6a;65
+R0
+vADC128S
+Z2 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 lhE^bPB^IlkJ7fo<JUR8`0
+I@Xen==4T?`c1HWBaQ5ic?1
+!s105 ADC128S_sv_unit
+S1
+Z4 d/userspace/k/kwilson33/ece551/hw5_SPISynthesis/SPISynthesisDirectory
+w1540998741
+8/userspace/k/kwilson33/ece551/hw5_SPISynthesis/SPISynthesisDirectory/ADC128S.sv
+F/userspace/k/kwilson33/ece551/hw5_SPISynthesis/SPISynthesisDirectory/ADC128S.sv
+L0 1
+Z5 OL;L;10.6a;65
+Z6 !s108 1542146711.000000
+!s107 /userspace/k/kwilson33/ece551/hw5_SPISynthesis/SPISynthesisDirectory/ADC128S.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/userspace/k/kwilson33/ece551/hw5_SPISynthesis/SPISynthesisDirectory/ADC128S.sv|
+!i113 0
+Z7 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+n@a@d@c128@s
+vSPI_ADC128S
+R2
+R3
+r1
+!s85 0
+31
+!i10b 1
+!s100 ;E62=i88@ghW83DU@9;CK1
+I68b:0>8X14B=GP@]lPJ6E2
+!s105 SPI_ADC128S_sv_unit
+S1
+R4
+w1541377146
+8/userspace/k/kwilson33/ece551/hw5_SPISynthesis/SPISynthesisDirectory/SPI_ADC128S.sv
+F/userspace/k/kwilson33/ece551/hw5_SPISynthesis/SPISynthesisDirectory/SPI_ADC128S.sv
+L0 1
+R5
+R6
+!s107 /userspace/k/kwilson33/ece551/hw5_SPISynthesis/SPISynthesisDirectory/SPI_ADC128S.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/userspace/k/kwilson33/ece551/hw5_SPISynthesis/SPISynthesisDirectory/SPI_ADC128S.sv|
+!i113 0
+R7
+R1
+n@s@p@i_@a@d@c128@s
+vSPI_mstr16
+R3
+r1
+!s85 0
+31
+!i10b 1
+!s100 lW>0@ZlE?a_hb?12ziCa`1
+I?96@EmPobR@DzT[L]A^5a1
+R4
+w1542146201
+8/userspace/k/kwilson33/ece551/hw5_SPISynthesis/SPISynthesisDirectory/SPI_mstr16.vg
+F/userspace/k/kwilson33/ece551/hw5_SPISynthesis/SPISynthesisDirectory/SPI_mstr16.vg
+L0 8
+R5
+Z8 !s108 1542146512.000000
+!s107 /userspace/k/kwilson33/ece551/hw5_SPISynthesis/SPISynthesisDirectory/SPI_mstr16.vg|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/userspace/k/kwilson33/ece551/hw5_SPISynthesis/SPISynthesisDirectory/SPI_mstr16.vg|
+!i113 0
+o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+n@s@p@i_mstr16
+vSPI_mstr16_tb
+R2
+R3
+r1
+!s85 0
+31
+!i10b 1
+!s100 d3]]f73Jn=S`cQH<LiBEC2
+IX;A:1jgAR7@YjU_FnXh=C1
+!s105 SPI_mstr16_tb_sv_unit
+S1
+R4
+w1542146280
+8/userspace/k/kwilson33/ece551/hw5_SPISynthesis/SPISynthesisDirectory/SPI_mstr16_tb.sv
+F/userspace/k/kwilson33/ece551/hw5_SPISynthesis/SPISynthesisDirectory/SPI_mstr16_tb.sv
+L0 3
+R5
+R8
+!s107 /userspace/k/kwilson33/ece551/hw5_SPISynthesis/SPISynthesisDirectory/SPI_mstr16_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/userspace/k/kwilson33/ece551/hw5_SPISynthesis/SPISynthesisDirectory/SPI_mstr16_tb.sv|
+!i113 0
+R7
+R1
+n@s@p@i_mstr16_tb

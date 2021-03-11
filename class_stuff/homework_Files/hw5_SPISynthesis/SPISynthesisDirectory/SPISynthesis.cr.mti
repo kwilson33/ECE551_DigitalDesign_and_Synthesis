@@ -1,0 +1,29 @@
+/userspace/k/kwilson33/ece551/hw5_SPISynthesis/SPISynthesisDirectory/SPI_ADC128S.sv {1 {vlog -work work -vopt -sv -stats=none /userspace/k/kwilson33/ece551/hw5_SPISynthesis/SPISynthesisDirectory/SPI_ADC128S.sv
+QuestaSim-64 vlog 10.6a Compiler 2017.03 Mar 16 2017
+-- Compiling module SPI_ADC128S
+
+Top level modules:
+	SPI_ADC128S
+
+} {} {}} /userspace/k/kwilson33/ece551/hw5_SPISynthesis/SPISynthesisDirectory/SPI_mstr16_tb.sv {1 {vlog -work work -vopt -sv -stats=none /userspace/k/kwilson33/ece551/hw5_SPISynthesis/SPISynthesisDirectory/SPI_mstr16_tb.sv
+QuestaSim-64 vlog 10.6a Compiler 2017.03 Mar 16 2017
+-- Compiling module SPI_mstr16_tb
+
+Top level modules:
+	SPI_mstr16_tb
+
+} {} {}} /userspace/k/kwilson33/ece551/hw5_SPISynthesis/SPISynthesisDirectory/ADC128S.sv {1 {vlog -work work -vopt -sv -stats=none /userspace/k/kwilson33/ece551/hw5_SPISynthesis/SPISynthesisDirectory/ADC128S.sv
+QuestaSim-64 vlog 10.6a Compiler 2017.03 Mar 16 2017
+-- Compiling module ADC128S
+
+Top level modules:
+	ADC128S
+
+} {} {}} /userspace/k/kwilson33/ece551/hw5_SPISynthesis/SPISynthesisDirectory/SPI_mstr16.vg {1 {vlog -work work -vopt -stats=none /userspace/k/kwilson33/ece551/hw5_SPISynthesis/SPISynthesisDirectory/SPI_mstr16.vg
+QuestaSim-64 vlog 10.6a Compiler 2017.03 Mar 16 2017
+-- Compiling module SPI_mstr16
+
+Top level modules:
+	SPI_mstr16
+
+} {} {}}

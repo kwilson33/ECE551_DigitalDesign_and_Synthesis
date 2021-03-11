@@ -1,0 +1,58 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/AppV5/Quartus_16.v2
+vUART_tx
+Z0 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+!s110 1539792866
+!i10b 1
+!s100 ?F=MZlNALBdhJO0_a5f?=1
+IK@MdAcAj>8PW@WNPoW><?2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+!s105 UART_tx_sv_unit
+S1
+Z2 dI:/ece551/exercise11_UARTTransmitter
+w1539484258
+8I:/ece551/exercise11_UARTTransmitter/UART_tx.sv
+FI:/ece551/exercise11_UARTTransmitter/UART_tx.sv
+L0 2
+Z3 OV;L;10.4d;61
+r1
+!s85 0
+31
+!s108 1539792866.000000
+!s107 I:/ece551/exercise11_UARTTransmitter/UART_tx.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|I:/ece551/exercise11_UARTTransmitter/UART_tx.sv|
+!i113 1
+Z4 o-work work -sv
+n@u@a@r@t_tx
+vUART_tx_tb
+R0
+!s110 1539471570
+!i10b 1
+!s100 0lCD3F_CB07M37?bnkAU:1
+I]HkeQd7A=zW[6?3d;TLF^2
+R1
+!s105 UART_tx_tb_sv_unit
+S1
+R2
+w1539471558
+8I:/ece551/exercise11_UARTTransmitter/UART_tx_tb.sv
+FI:/ece551/exercise11_UARTTransmitter/UART_tx_tb.sv
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1539471570.000000
+!s107 I:/ece551/exercise11_UARTTransmitter/UART_tx_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|I:/ece551/exercise11_UARTTransmitter/UART_tx_tb.sv|
+!i113 1
+R4
+n@u@a@r@t_tx_tb

@@ -1,0 +1,15 @@
+I:/ece551/arith_block/arith.v {1 {vlog -work work -stats=none {I:\ece551\arith_block\arith.v}
+Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+-- Compiling module arith
+
+Top level modules:
+	arith
+
+} {} {}} I:/ece551/arith_block/arith_tb.v {1 {vlog -work work -stats=none {I:\ece551\arith_block\arith_tb.v}
+Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+-- Compiling module arith_tb
+
+Top level modules:
+	arith_tb
+
+} {} {}}
